@@ -1,0 +1,24 @@
+# Vocabulary Properties
+uuid = cbb8ced6-1bcf-452d-962f-12938c8e7da6
+
+# miniloan.Borrower
+miniloan.Borrower#concept.label = borrower
+miniloan.Borrower.creditScore#phrase.action = set the credit score of {this} to {credit score}
+miniloan.Borrower.creditScore#phrase.navigation = {credit score} of {this}
+miniloan.Borrower.name#phrase.navigation = {name} of {this}
+miniloan.Borrower.yearlyIncome#phrase.action = set the yearly income of {this} to {yearly income}
+miniloan.Borrower.yearlyIncome#phrase.navigation = {yearly income} of {this}
+
+# miniloan.Loan
+miniloan.Loan#concept.label = loan
+miniloan.Loan.addToMessages(java.lang.String)#phrase.action = add {0} to the messages of {this}
+miniloan.Loan.amount#phrase.navigation = {amount} of {this}
+miniloan.Loan.approvalStatus#phrase.navigation = {approval status} of {this}
+miniloan.Loan.approved#phrase.action = make it {approved} that {this} is approved
+miniloan.Loan.approved#phrase.navigation = {this} is approved
+miniloan.Loan.duration#phrase.navigation = {duration} of {this}
+miniloan.Loan.messages#phrase.navigation = {message} of {this}
+miniloan.Loan.reject()#phrase.action = reject {this}
+miniloan.Loan.removeFromMessages(java.lang.String)#phrase.action = remove {0} from the messages of {this}
+miniloan.Loan.yearlyInterestRate#phrase.navigation = {yearly interest rate} of {this}
+miniloan.Loan.yearlyRepayment#phrase.navigation = {yearly repayment} of {this}

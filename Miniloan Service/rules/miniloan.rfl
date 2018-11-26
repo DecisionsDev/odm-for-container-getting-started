@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.ruleflow:RuleFlow xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.ruleflow="http://ilog.rules.studio/model/ruleflow.ecore">
+  <name>miniloan</name>
+  <uuid>f52ba17a-2a7e-4caa-9092-fecf906fcd6d</uuid>
+  <locale>en_US</locale>
+  <categories>any</categories>
+  <rfModel>
+<Ruleflow xmlns="http://schemas.ilog.com/Rules/7.0/Ruleflow">
+  <Body>
+    <TaskList>
+      <StartTask Identifier="task_3"/>
+      <RuleTask ExecutionMode="Fastpath" ExitCriteria="None" Identifier="validation" Ordering="Default">
+        <RuleList>
+          <Package Name="validation"/>
+        </RuleList>
+      </RuleTask>
+      <RuleTask ExecutionMode="RetePlus" ExitCriteria="None" Identifier="eligibility" Ordering="Default">
+        <RuleList>
+          <Package Name="eligibility"/>
+        </RuleList>
+      </RuleTask>
+      <StopTask Identifier="task_2">
+        <Actions Language="bal"><![CDATA[print the approval status of 'the loan' ; ]]>&#13;<![CDATA[
+]]></Actions>
+      </StopTask>
+    </TaskList>
+    <NodeList>
+      <TaskNode Identifier="node_0" Task="task_3"/>
+      <TaskNode Identifier="node_1" Task="task_2"/>
+      <TaskNode Identifier="node_2" Task="validation"/>
+      <TaskNode Identifier="node_3" Task="eligibility"/>
+    </NodeList>
+    <TransitionList>
+      <Transition Identifier="transition_0" Source="node_0" Target="node_2"/>
+      <Transition Identifier="transition_1" Source="node_2" Target="node_3">
+        <Conditions Language="bal"><![CDATA['the loan' is approved ]]></Conditions>
+      </Transition>
+      <Transition Identifier="transition_2" Source="node_3" Target="node_1"/>
+      <Transition Identifier="transition_3" Source="node_2" Target="node_1"/>
+    </TransitionList>
+  </Body>
+  <Resources>
+    <ResourceSet Locale="en_US">
+      <Data Name="transition_1#label">data approved</Data>
+      <Data Name="node_0#height">21.0</Data>
+      <Data Name="node_2#name">node_2</Data>
+      <Data Name="node_3#y">178.0</Data>
+      <Data Name="node_3#name">node_3</Data>
+      <Data Name="node_1#name">node_1</Data>
+      <Data Name="node_3#x">67.796875</Data>
+      <Data Name="node_0#y">26.0</Data>
+      <Data Name="node_0#x">89.69531</Data>
+      <Data Name="node_1#x">97.69531</Data>
+      <Data Name="node_1#y">255.0</Data>
+      <Data Name="node_1#width">23.0</Data>
+      <Data Name="node_1#height">23.0</Data>
+      <Data Name="node_2#x">98.6953125</Data>
+      <Data Name="node_2#y">106.0</Data>
+      <Data Name="node_0#width">21.0</Data>
+      <Data Name="node_0#name">node_0</Data>
+    </ResourceSet>
+  </Resources>
+  <Properties>
+    <imports><![CDATA[use loan;
+]]></imports>
+  </Properties>
+</Ruleflow></rfModel>
+</ilog.rules.studio.model.ruleflow:RuleFlow>
