@@ -4,9 +4,7 @@ In this task, you learn how to delete projects from Decision Center and the Rule
 
 **About this task**
 
-When you no longer need a project, you can delete if from its database. You can leave this task to your administrator. However, if the instance of the project is yours and you want to do this tutorial again, you can do the cleanup yourself. If you want to keep your changes, you can export a compressed file of the project from Decision Center before deleting the project.
-
-**Tip:** Import the additional projects listed on the [Tutorial scenario and prerequisites](../gs_topics/tut_icp_gs_int.md) page to continue exploring the Business console.
+When you no longer need a project, you can delete it from its database. You can leave this task to your administrator. However, if the instance of the project is yours and you want to do this tutorial again, you can do the cleanup yourself. If you want to keep your changes, you can export a compressed file of the project from Decision Center before deleting the project.
 
 ## Step 1: Deleting the decision service from Decision Center 
 

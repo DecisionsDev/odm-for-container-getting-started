@@ -29,17 +29,6 @@ GitHub repository](https://github.com/ODMDev/odm-for-dev-getting-started) by cli
 |Miniloan Service|You work in this decision service in the tutorial. You import it into the Business console, and update and deploy its rules.|
 |miniloan-xom|This project contains the Java object model that is used in Miniloan Service.|
 
-**Additional projects**
-
-The following projects are also included in the download file. They are complete examples, whereas the Miniloan Service project is a basic introductory project. Import the additional projects to further explore the Business console.
-
-To import either of the additional projects, follow the instructions for importing the Miniloan Service decision service in [Task 1: Evaluating the decisions](../gs_topics/tut_icp_gs_evaluate_changes_lsn.md), and select the compressed file of the additional project to import it.
-
-|Project|Description|
-|------|-----------|
-|Loan Validation Service|This decision service validates loans based on borrower data and loan parameters. It also computes loan insurance rates.|
-|Shipment Pricing|This decision model service computes shipping prices based on data that includes distance, size, weight, and pickup and drop-off points.|
-
 ## Best practices
 
 This tutorial includes the following best practices:

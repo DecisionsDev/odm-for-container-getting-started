@@ -14,6 +14,15 @@ Through a tour of Decision Center and the Rule Execution Server console, you lea
 
 This tutorial does not cover decision service development in Rule Designer, collaborative development in the decision governance framework, or simulations in Decision Center.
 
+## Additional projects
+
+This tutorial uses the Miniloan Service decision service. To further explore the development components, you can use the following sample projects, which come preloaded in the Decision Center Business console:
+
+|Project|Description|
+|------|-----------|
+|Loan Validation Service|This decision service validates loans based on borrower data and loan parameters. It also computes loan insurance rates.|
+|Shipment Pricing|This decision model service computes shipping prices based on data that includes distance, size, weight, and pickup and drop-off points.|
+
 ## Table of contents
 
 -   [Tutorial scenario and prerequisites](gs_topics/tut_icp_gs_int.md)
