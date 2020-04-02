@@ -1,0 +1,11 @@
+numpy
+scipy
+Flask
+flask-restplus
+pandas
+xgboost
+scikit_learn
+sklearn-pmml-model
+joblib
+requests
+
