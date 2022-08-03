@@ -21,13 +21,9 @@ As you go through the tutorial, you log in as two different users to get a feel 
 Do the following tasks before you start the tutorial:
 
 -   Install [ODM for Developers](https://hub.docker.com/r/ibmcom/odm/), and note the URLs of your instances of the Decision Center Business console and the Rule Execution Server console.
--   Download the Getting Started for ODM for Developers sample project from this [ODMDev 
-GitHub repository](https://github.com/ODMDev/odm-for-dev-getting-started) by clicking **Clone or download** and then **Download ZIP**. This action downloads the entire contents of the GitHub repository. You need the following projects to work on this tutorial:
-
-|Project|Description|
-|------|-----------|
-|Miniloan Service|You work in this decision service in the tutorial. You import it into the Business console, and update and deploy its rules.|
-|miniloan-xom|This project contains the Java object model that is used in Miniloan Service.|
+-   Download [MiniLoan Service.zip](../../Miniloan%20Service.zip?raw=1)
+-   Download [miniloan-test.xlsx](../../miniloan-test.xlsx?raw=1)
+-   Download [execution-payload.json](../../execution-payload.json?raw=1)
 
 ## Best practices
 
