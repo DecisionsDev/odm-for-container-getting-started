@@ -46,7 +46,7 @@ You check the decision table and find an error. You correct the error, save your
 
 1.   Hover over one of the fields with a gold triangle in the decision table. It shows an overlap error:
 
- ![Image shows the error message displayed when you hover the gold triangle](../doc/images/scrn_classic_dterror.jpg)
+ ![Image shows the error message displayed when you hover the gold triangle](../images//scrn_classic_dterror.jpg)
 
 2.   Click **Edit** to reopen the table. 
 3.   Double-click the credit score condition for row 2, change the value 200 to 300, and press Enter. This change eliminates the overlap in rows 1 and 2. 
@@ -61,7 +61,7 @@ You implement the policy that shortens the minimum length of a loan to 6 months.
 
 1.   Click **main** in the breadcrumbs below the top banner to return to the contents of the branch. 
 2.   Open the validation folder, which contains the rules for validating loan data. 
-3.   Click the **Add** button ![Image shows the Add button](../doc/images/icon_merge_create_plus.jpg) button, and then click **New Rule**. 
+3.   Click the **Add** button ![Image shows the Add button](../images//icon_merge_create_plus.jpg) button, and then click **New Rule**. 
 4.   Type the name **check duration**, and click **Create**. 
 5.   Copy and paste the following rule into the rule editor, or build the rule with the completion menu \(see the [Rule editor flash demo](http://public.dhe.ibm.com/software/websphere/techexchange/WODM/intellirule_viewlet_swf.html) on the IBM® Customer Support site for an English-only tour of the rule-editing features\). 
     
@@ -78,7 +78,7 @@ You implement the policy that shortens the minimum length of a loan to 6 months.
 
 In the next task, you test and deploy the decision service. 
 
-[**Next**![Next icon](../doc/images/next.jpg)](../doc/topics/tut_icp_gs_test_deploy_lsn.md)
+[**Next**![Next icon](../images//next.jpg)](../topics//tut_icp_gs_test_deploy_lsn.md)
 
-[![](../doc/images/home.jpg) **Back to table of contents**](../README.md)
+[![](../images//home.jpg) **Back to table of contents**](../README.md)
 

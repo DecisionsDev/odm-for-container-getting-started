@@ -22,16 +22,16 @@ You import the Miniloan Service decision service into Decision Center, and then 
 1.   Open the Decision Center Business console. 
 2.   Log in by entering `odmAdmin` as the user name and password. 
 
- **Note:** If you see that Miniloan Service is already available in the **Library** tab, you must remove it before you can import it again. Ask your administrator if you can remove the existing Miniloan Service decision service, and refer to the following page to learn how to remove a decision service from Decision Center: [Step 1: Deleting the decision service from Decision Center](../doc/topics/tut_icp_gs_clean_db_lsn.md#step-1-deleting-the-decision-service-from-decision-center).
+ **Note:** If you see that Miniloan Service is already available in the **Library** tab, you must remove it before you can import it again. Ask your administrator if you can remove the existing Miniloan Service decision service, and refer to the following page to learn how to remove a decision service from Decision Center: [Step 1: Deleting the decision service from Decision Center](../topics//tut_icp_gs_clean_db_lsn.md#step-1-deleting-the-decision-service-from-decision-center).
 
-3.  Click the **Import Decision Service** button ![Image shows the Import Decision Service button](../doc/images/icon_import_dservice.jpg).
+3.  Click the **Import Decision Service** button ![Image shows the Import Decision Service button](../images//icon_import_dservice.jpg).
 4.  Click **Choose** to browse and then select the `Miniloan Service.zip` file, previously downloaded from GitHub.
 5.  Make sure **Use Decision Governance Framework** is not selected. To simplify the tutorial, you work in an ungoverned branch of the decision service.
 6.  Click **Import**. The Miniloan Service decision service automatically opens. You see the **Releases** and **Branches** tabs. Because you chose not to use the decision governance framework, you can see that the **Releases** tab is empty.
 7.   Open the **Branches** tab, and then click the **main** branch. A decision service can contain many projects. For simplicity, all the rules of Miniloan Service are contained in its top-level project, which has the same name as the decision service.
 8.  Click **All types** in the **Types** window to display all the artifacts. In the **Decision Artifacts** tab, you can see a folder for the decision operations, the miniloan ruleflow, and folders that contain the rules:
 
- ![Image shows the Decision Artifacts tab](../doc/images/scrn_decision_artifacts.jpg)
+ ![Image shows the Decision Artifacts tab](../images//scrn_decision_artifacts.jpg)
 
 
 ## Step 2: Exploring the ruleflow
@@ -42,11 +42,11 @@ You open and explore the miniloan ruleflow.
 
 1.   In the **Decision Artifacts** tab, click the miniloan ruleflow:
 
-![Image shows the miniloan ruleflow icon](../doc/images/icon_miniloan_ruleflow.jpg) 
+![Image shows the miniloan ruleflow icon](../images//icon_miniloan_ruleflow.jpg) 
 
 The ruleflow states the sequence for applying the rules:
 
- ![Image shows the miniloan ruleflow](../doc/images/scrn_miniloan_ruleflow.jpg)
+ ![Image shows the miniloan ruleflow](../images//scrn_miniloan_ruleflow.jpg)
 
  The ruleflow first applies the validation rules. If the data from a loan request passes the validation conditions, the ruleflow directs the request to the eligibility rules. However, if the validation decision point does not approve the data, the ruleflow skips the eligibility decision point, and the decision service stops processing the loan request. If you click the end node, you can see that the final execution is to print the status of the loan.
 
@@ -60,7 +60,7 @@ You want to review the business rules and track the changes that are made to the
 1.   Under **Miniloan Service**, click the eligibility folder to view its contents. 
 2.   Click the check box beside **Name** to select all the rules in the folder, and then click the gold star in the toolbar to follow all the rules in the folder. A gold star is displayed next to each rule. Changes to these rules are now displayed on your home tab.
 
- ![Image shows the icons that are displayed next to the folder names.](../doc/images/scrn_follow_rules_menu.jpg)
+ ![Image shows the icons that are displayed next to the folder names.](../images//scrn_follow_rules_menu.jpg)
 
 
 ## Step 4: Viewing the business rules
@@ -80,7 +80,7 @@ Business rules come in two formats:
 
  The first two columns in the table define the conditions, and the other columns define the actions.
 
- ![This image shows the repayment and score decision table](../doc/images/scrn_decision_table_salaryscore.jpg)
+ ![This image shows the repayment and score decision table](../images//scrn_decision_table_salaryscore.jpg)
 
 
 ## Step 5: Creating and running a test suite
@@ -101,11 +101,11 @@ You explore and run the miniloan-test test suite. It is in the Getting Started f
  
  The following figure shows the three scenarios in the **Scenarios** sheet:
 
- ![The image shows the Scenarios sheet](../doc/images/scrn_scenarios_sheet.jpg)
+ ![The image shows the Scenarios sheet](../images//scrn_scenarios_sheet.jpg)
 
  The following figure shows the expected values in the **Expected Results** sheet:
 
- ![The image shows the Expected results sheet](../doc/images/scrn_expected_results_sheet.jpg)
+ ![The image shows the Expected results sheet](../images//scrn_expected_results_sheet.jpg)
 
  The **Expected Results** sheet contains the expected values for the following tests:
 
@@ -121,7 +121,7 @@ You explore and run the miniloan-test test suite. It is in the Getting Started f
 
 2.  Close the Excel file.
 3.  Back in the Business console, open the **Tests** tab. 
-4.  Click the **New Test Suite** button ![Image shows the New Test Suite button](../doc/images/icon_merge_create_plus.jpg).
+4.  Click the **New Test Suite** button ![Image shows the New Test Suite button](../images//icon_merge_create_plus.jpg).
 5.  In **File to use**, browse to miniloan-test.xlsx on your computer.
 6.  Click **Save and run**.
 7.  Type the comment Running test suite and click **Create new version**.
@@ -132,7 +132,7 @@ You explore and run the miniloan-test test suite. It is in the Getting Started f
  -   The messages match the expected results.
  **Details...** dialogs can be opened for collection values. For example, expand **Rejected loan** and open the **Details...** dialog for **the messages of the loan equals** to see the actual and expected values of the tested scenario:
 
- ![The image shows the details of the Details dialog for the messages of the loan equals](../doc/images/scrn_report_details.jpg)
+ ![The image shows the details of the Details dialog for the messages of the loan equals](../images//scrn_report_details.jpg)
 
 10. Close the report.
 
@@ -144,7 +144,7 @@ You take a snapshot of the rules before they are changed.
 
 1.   Click **Take Snapshot**:
 
-![Image shows the Take snapshot icon](../doc/images/icon_take_snapshot.jpg).
+![Image shows the Take snapshot icon](../images//icon_take_snapshot.jpg).
 
 2.   In the **Take a Snapshot** window, enter "Initial State" as the name, and "Snapshot of the initial state of the branch" as the description, and then click **Create**. You can now find the snapshot in the **Snapshots** tab. A snapshot captures the state of a branch at a specific moment in time. You cannot edit the contents of a snapshot, but you can use a snapshot to restore a branch to a previous state.
 
@@ -152,7 +152,7 @@ You take a snapshot of the rules before they are changed.
 
 In the next task, you search for rules, modify a decision table, and create an action rule in the Business console. 
 
-[**Next** ![Next icon](../doc/images/next.jpg)](../doc/topics/tut_icp_gs_create_rules_lsn.md)
+[**Next** ![Next icon](../images//next.jpg)](../topics//tut_icp_gs_create_rules_lsn.md)
 
-[![](../doc/images/home.jpg) **Back to table of contents**](../README.md)
+[![](../images//home.jpg) **Back to table of contents**](../README.md)
 
