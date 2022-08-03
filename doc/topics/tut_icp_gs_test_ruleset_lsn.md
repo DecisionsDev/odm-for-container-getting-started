@@ -16,11 +16,11 @@ You view the RuleApp in the Rule Execution Server console and check the status o
 2.  Click the **Explorer** tab.
 3.   In the Navigator, expand **RuleApps**, and then /mydeployment/1.0. You see that the Rule Execution Server console contains version 1.0 of mydeployment, which contains version 1.0 of Miniloan\_ServiceRuleset:
 
- ![Image shows the navigation menu](../images//scrn_deploy_resnav_icp.jpg)
+ ![Image shows the navigation menu](../images/scrn_deploy_resnav_icp.jpg)
 
 4.   Click /Miniloan\_ServiceRuleset/1.0 to view the details of the ruleset in the Ruleset View. The status of the ruleset is enabled, which indicates that ruleset can be run:
 
- ![Image shows details details of the ruleset](../images//scrn_deploy_view_icp.jpg)
+ ![Image shows details details of the ruleset](../images/scrn_deploy_view_icp.jpg)
 
 
 ## Step 2: Testing the ruleset with a REST request
@@ -35,7 +35,7 @@ You test the ruleset with a REST request in the Rule Execution Server console.
 
 http://(host port)/DecisionService/rest/v1/mydeployment/1.0/Miniloan_ServiceRuleset/1.0/
 
- You need the URL to execute the request in [Step 3 \(optional\): Testing the execution of the ruleset using curl](../topics//tut_icp_gs_test_ruleset_lsn.md#step-3-optional-testing-the-execution-of-the-ruleset-using-curl).
+ You need the URL to execute the request in [Step 3 \(optional\): Testing the execution of the ruleset using curl](../topics/tut_icp_gs_test_ruleset_lsn.md#step-3-optional-testing-the-execution-of-the-ruleset-using-curl).
 
 4.  Close the web page.
 5.  Back on the Miniloan\_ServiceRuleset page, click **Retrieve HTDS Description File**.
@@ -59,7 +59,7 @@ http://(host port)/DecisionService/rest/v1/mydeployment/1.0/Miniloan_ServiceRule
 
 8.  Click **Execute request**. The Server Response returns the following data:
 
- ![Image shows the server response](../images//scrn_server_response.jpg)
+ ![Image shows the server response](../images/scrn_server_response.jpg)
 
  It shows that the loan is rejected because the debt-to-income ratio is too high.
 
@@ -77,19 +77,19 @@ You test the execution of the Miniloan\_ServiceRuleset ruleset in a command term
     
     curl -X POST -H "Content-Type: application/json" decisionserviceURL -u resExecutor:resExecutor -d "@test.json"  
 
- Where decisionserviceURL is the URL you copied in [Step 2: Testing the ruleset for REST execution](../topics//tut_icp_gs_test_ruleset_lsn.md#step-2-testing-the-ruleset-for-rest-execution).
+ Where decisionserviceURL is the URL you copied in [Step 2: Testing the ruleset for REST execution](../topics/tut_icp_gs_test_ruleset_lsn.md#step-2-testing-the-ruleset-for-rest-execution).
 
  The command issues a POST request for the URL of your decision service. The execution parameters are stored in the test JSON file that is delivered with the Miniloan Service sample project.
 
 4.  Press Enter. The command returns the following output:
 
- ![The image shows the results](../images//scrn_curl_result.jpg)
+ ![The image shows the results](../images/scrn_curl_result.jpg)
 
  It shows that the loan is rejected because the debt-to-income ratio is too high.
 
 You have finished the tutorial, and no longer need the decision service in Decision Center and the Rule Execution Server console. In the next task, you remove the Miniloan decision service from Decision Center and the Rule Execution Server console. 
 
-[**Next** ![](../images//next.jpg)](../topics//tut_icp_gs_clean_db_lsn.md)
+[**Next** ![](../images/next.jpg)](../topics/tut_icp_gs_clean_db_lsn.md)
 
-[![](../images//home.jpg) **Back to table of contents**](../README.md)
+[![](../images/home.jpg) **Back to table of contents**](../../README.md)
 

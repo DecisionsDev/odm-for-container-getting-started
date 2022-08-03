@@ -40,7 +40,7 @@ This tutorial includes the following best practices:
 -   Test a rule set for REST execution in the Rule Execution Server console.
 -   Delete projects from the databases when you no longer use them. 
 
-[**Next** ![Next icon](../images//next.jpg)](../topics//tut_icp_gs_evaluate_changes_lsn.md)
+[**Next** ![Next icon](../images/next.jpg)](../topics/tut_icp_gs_evaluate_changes_lsn.md)
 
-[![](../images//home.jpg) **Back to table of contents**](../README.md)
+[![](../images/home.jpg) **Back to table of contents**](../../README.md)
 
