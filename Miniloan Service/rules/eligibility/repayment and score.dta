@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model.dt:DecisionTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model.dt="http://ilog.rules.studio/model/dt.ecore">
+<ilog.rules.studio.model.dt:DecisionTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.dt="http://ilog.rules.studio/model/dt.ecore">
   <name>repayment and score</name>
   <uuid>91025540-61cb-4392-9731-d5c155081a58</uuid>
   <locale>en_US</locale>
@@ -223,4 +223,4 @@
     </ResourceSet>
   </Resources>
 </DT></definition>
-</model.dt:DecisionTable>
+</ilog.rules.studio.model.dt:DecisionTable>

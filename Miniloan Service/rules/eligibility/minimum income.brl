@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model.brl="http://ilog.rules.studio/model/brl.ecore">
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
   <name>minimum income</name>
   <uuid>f5ad9c90-3892-433d-88ad-12de47e9d6ae</uuid>
   <locale>en_US</locale>
@@ -8,4 +8,4 @@
 then 
   add "Too big Debt-To-Income ratio" to the messages of 'the loan' ;
   reject 'the loan' ;]]></definition>
-</model.brl:ActionRule>
+</ilog.rules.studio.model.brl:ActionRule>

@@ -20,8 +20,8 @@
         </RuleList>
       </RuleTask>
       <StopTask Identifier="task_2">
-        <Actions Language="bal"><![CDATA[print the approval status of 'the loan' ; ]]>&#13;<![CDATA[
-]]></Actions>
+        <Actions Language="bal"><![CDATA[print the approval status of 'the loan' ; ]]>&#13;
+</Actions>
       </StopTask>
     </TaskList>
     <NodeList>

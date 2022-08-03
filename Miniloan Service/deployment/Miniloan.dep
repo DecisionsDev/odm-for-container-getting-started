@@ -1,14 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <com.ibm.rules.studio.model.decisionservice:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" ruleAppName="mydeployment" managingXom="true">
+  <eAnnotations source="ilog.rules.custom_properties">
+    <details key="Dep_Groups" value="rtsAdministrator,rtsConfigManager"/>
+    <details key="Dep_SnapshotCreationKind" value="ALWAYS"/>
+  </eAnnotations>
   <name>Miniloan</name>
   <uuid>44b9b9ad-f66d-408e-8ef0-61c8fe12f445</uuid>
+  <targets label="Decision Service Execution"/>
   <operations operationName="Miniloan ServiceOperation">
     <operation href="Miniloan%20ServiceOperation.dop#30b58bec-77bb-430f-a9dd-2ed16dfa4426"/>
+    <properties key="ruleset.bom.enabled">
+      <value><![CDATA[true]]></value>
+    </properties>
     <properties key="ruleset.version">
       <value><![CDATA[1.0]]></value>
     </properties>
-    <properties key="ruleset.bom.enabled">
+    <properties key="com.ibm.rules.engine.bytecode.generation">
       <value><![CDATA[true]]></value>
+    </properties>
+    <properties key="ruleset.trace.enabled">
+      <value><![CDATA[false]]></value>
+    </properties>
+    <properties key="ruleset.debug.enabled">
+      <value><![CDATA[false]]></value>
+    </properties>
+    <properties key="ruleset.status">
+      <value><![CDATA[enabled]]></value>
     </properties>
     <properties key="monitoring.enabled">
       <value><![CDATA[true]]></value>
