@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><launchConfiguration type="com.ibm.rules.studio.decisionservice.launching.DecisionOperation">
+<stringAttribute key="com.ibm.rules.studio.decisionservice.ui.OPERATION_PATH" value="/Miniloan Service/deployment/Miniloan ServiceOperation"/>
+<mapAttribute key="ilog.rules.studio.launching.RULESET_PARAMETERS_FUNCT_SIGN">
+<mapEntry key="borrower" value="function miniloan.Borrower get_borrower_value()"/>
+<mapEntry key="loan" value="function miniloan.Loan get_loan_value()"/>
+</mapAttribute>
+<mapAttribute key="ilog.rules.studio.launching.RULESET_PARAMETERS_FUNCT_VALUES">
+<mapEntry key="borrower" value="return new miniloan.Borrower(&quot;Joe&quot;, 600, 8000);"/>
+<mapEntry key="loan" value="return new miniloan.Loan(50000, 240, 0.05);"/>
+</mapAttribute>
+<mapAttribute key="ilog.rules.studio.launching.RULESET_PARAMETERS_NAMES">
+<mapEntry key="borrower" value="borrower"/>
+<mapEntry key="loan" value="loan"/>
+</mapAttribute>
+<mapAttribute key="ilog.rules.studio.launching.RULESET_PARAMETERS_SIMPLE_VALUES">
+<mapEntry key="borrower" value="new miniloan.Borrower(&quot;Joe&quot;, 600, 8000)"/>
+<mapEntry key="loan" value="new miniloan.Loan(50000, 240, 0.05)"/>
+</mapAttribute>
+<mapAttribute key="ilog.rules.studio.launching.RULESET_PARAMETERS_TYPES">
+<mapEntry key="borrower" value="1"/>
+<mapEntry key="loan" value="1"/>
+</mapAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/Miniloan Service"/>
+<listEntry value="/Miniloan Service"/>
+<listEntry value="/Miniloan Service/deployment/Miniloan ServiceOperation.dop"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+<listEntry value="4"/>
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Miniloan Service"/>
+</launchConfiguration>

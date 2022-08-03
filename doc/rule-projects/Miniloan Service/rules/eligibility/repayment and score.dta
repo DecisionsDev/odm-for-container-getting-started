@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model.dt:DecisionTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model.dt="http://ilog.rules.studio/model/dt.ecore">
+  <name>repayment and score</name>
+  <uuid>91025540-61cb-4392-9731-d5c155081a58</uuid>
+  <locale>en_US</locale>
+  <definition>
+<DT xmlns="http://schemas.ilog.com/Rules/7.0/DecisionTable" Version="7.0">
+  <Body>
+    <Properties>
+      <Property Name="Lock.ApplyLocking" Type="xs:boolean"><![CDATA[false]]></Property>
+      <Property Name="UI.RenderBoolean" Type="xs:boolean"><![CDATA[true]]></Property>
+      <Property Name="UI.ShowLockIcon" Type="xs:boolean"><![CDATA[false]]></Property>
+      <Property Name="UI.ShowRuleView" Type="xs:boolean"><![CDATA[false]]></Property>
+    </Properties>
+    <Preconditions>
+      <Text><![CDATA[if the yearly income of 'the borrower' is more than 0
+	 ]]></Text>
+    </Preconditions>
+    <Structure>
+      <ConditionDefinitions>
+        <ConditionDefinition Id="C0">
+          <ExpressionDefinition>
+            <Text><![CDATA[the yearly repayment of 'the loan' * 100 / the yearly income of 'the borrower' is at least <min> and less than <max>]]></Text>
+          </ExpressionDefinition>
+        </ConditionDefinition>
+        <ConditionDefinition Id="C1">
+          <ExpressionDefinition>
+            <Text><![CDATA[the credit score of 'the borrower' is at least <min> and less than <max>]]></Text>
+          </ExpressionDefinition>
+        </ConditionDefinition>
+      </ConditionDefinitions>
+      <ActionDefinitions>
+        <ActionDefinition Id="A0">
+          <ExpressionDefinition>
+            <Text><![CDATA[add <a string> to the messages of 'the loan']]></Text>
+          </ExpressionDefinition>
+        </ActionDefinition>
+        <ActionDefinition Id="A1">
+          <ExpressionDefinition>
+            <Text><![CDATA[make it <a boolean> that 'the loan'  is approved]]></Text>
+          </ExpressionDefinition>
+        </ActionDefinition>
+      </ActionDefinitions>
+    </Structure>
+    <Contents>
+      <Partition DefId="C0">
+        <Condition>
+          <Expression>
+            <Param><![CDATA[0]]></Param>
+            <Param><![CDATA[30]]></Param>
+          </Expression>
+          <Partition DefId="C1">
+            <Condition>
+              <Expression>
+                <Param><![CDATA[0]]></Param>
+                <Param><![CDATA[200]]></Param>
+              </Expression>
+              <ActionSet>
+                <Action DefId="A0">
+                  <Expression>
+                    <Param><![CDATA["debt-to-income too high compared to credit score"]]></Param>
+                  </Expression>
+                </Action>
+                <Action DefId="A1">
+                  <Expression>
+                    <Param><![CDATA[false]]></Param>
+                  </Expression>
+                </Action>
+              </ActionSet>
+            </Condition>
+            <Condition>
+              <Expression>
+                <Param><![CDATA[200]]></Param>
+                <Param><![CDATA[800]]></Param>
+              </Expression>
+              <ActionSet>
+                <Action DefId="A0" Enabled="false">
+                  <Expression/>
+                </Action>
+                <Action DefId="A1" Enabled="false">
+                  <Expression>
+                    <Param><![CDATA[true]]></Param>
+                  </Expression>
+                </Action>
+              </ActionSet>
+            </Condition>
+          </Partition>
+        </Condition>
+        <Condition>
+          <Expression>
+            <Param><![CDATA[30]]></Param>
+            <Param><![CDATA[45]]></Param>
+          </Expression>
+          <Partition DefId="C1">
+            <Condition>
+              <Expression>
+                <Param><![CDATA[0]]></Param>
+                <Param><![CDATA[400]]></Param>
+              </Expression>
+              <ActionSet>
+                <Action DefId="A0">
+                  <Expression>
+                    <Param><![CDATA["debt-to-income too high compared to credit score"]]></Param>
+                  </Expression>
+                </Action>
+                <Action DefId="A1">
+                  <Expression>
+                    <Param><![CDATA[false]]></Param>
+                  </Expression>
+                </Action>
+              </ActionSet>
+            </Condition>
+            <Condition>
+              <Expression>
+                <Param><![CDATA[400]]></Param>
+                <Param><![CDATA[800]]></Param>
+              </Expression>
+              <ActionSet>
+                <Action DefId="A0" Enabled="false">
+                  <Expression/>
+                </Action>
+                <Action DefId="A1" Enabled="false">
+                  <Expression>
+                    <Param><![CDATA[true]]></Param>
+                  </Expression>
+                </Action>
+              </ActionSet>
+            </Condition>
+          </Partition>
+        </Condition>
+        <Condition>
+          <Expression>
+            <Param><![CDATA[45]]></Param>
+            <Param><![CDATA[50]]></Param>
+          </Expression>
+          <Partition DefId="C1">
+            <Condition>
+              <Expression>
+                <Param><![CDATA[0]]></Param>
+                <Param><![CDATA[600]]></Param>
+              </Expression>
+              <ActionSet>
+                <Action DefId="A0">
+                  <Expression>
+                    <Param><![CDATA["debt-to-income too high compared to credit score"]]></Param>
+                  </Expression>
+                </Action>
+                <Action DefId="A1">
+                  <Expression>
+                    <Param><![CDATA[false]]></Param>
+                  </Expression>
+                </Action>
+              </ActionSet>
+            </Condition>
+            <Condition>
+              <Expression>
+                <Param><![CDATA[600]]></Param>
+                <Param><![CDATA[800]]></Param>
+              </Expression>
+              <ActionSet>
+                <Action DefId="A0" Enabled="false">
+                  <Expression/>
+                </Action>
+                <Action DefId="A1" Enabled="false">
+                  <Expression>
+                    <Param><![CDATA[true]]></Param>
+                  </Expression>
+                </Action>
+              </ActionSet>
+            </Condition>
+          </Partition>
+        </Condition>
+        <Condition>
+          <Expression>
+            <Text><![CDATA[<a number> is at least <a number>]]></Text>
+            <Param><![CDATA[50]]></Param>
+          </Expression>
+          <Partition DefId="C1">
+            <Condition>
+              <Expression>
+                <Param><![CDATA[0]]></Param>
+                <Param><![CDATA[800]]></Param>
+              </Expression>
+              <ActionSet>
+                <Action DefId="A0">
+                  <Expression>
+                    <Param><![CDATA["debt-to-income too high compared to credit score"]]></Param>
+                  </Expression>
+                </Action>
+                <Action DefId="A1">
+                  <Expression>
+                    <Param><![CDATA[false]]></Param>
+                  </Expression>
+                </Action>
+              </ActionSet>
+            </Condition>
+          </Partition>
+        </Condition>
+      </Partition>
+    </Contents>
+  </Body>
+  <Resources DefaultLocale="en_US">
+    <ResourceSet Locale="en_US">
+      <Data Name="/0/0/A#Height"><![CDATA[19]]></Data>
+      <Data Name="/0/1/A#Height"><![CDATA[19]]></Data>
+      <Data Name="/0[]#Format"><![CDATA[{0,number,#0.##} %]]></Data>
+      <Data Name="/1/1/A#Height"><![CDATA[20]]></Data>
+      <Data Name="/1[]#Format"><![CDATA[{0,number,#0.##} %]]></Data>
+      <Data Name="/2[]#Format"><![CDATA[{0,number,#0.##} %]]></Data>
+      <Data Name="/3[]#Format"><![CDATA[≥ {0} %]]></Data>
+      <Data Name="Definitions(A0)#HeaderText"><![CDATA[message]]></Data>
+      <Data Name="Definitions(A0)#Width"><![CDATA[262]]></Data>
+      <Data Name="Definitions(A1)#HeaderText"><![CDATA[ loan approved]]></Data>
+      <Data Name="Definitions(A1)#Width"><![CDATA[261]]></Data>
+      <Data Name="Definitions(C0)#HeaderText"><![CDATA[debt to income]]></Data>
+      <Data Name="Definitions(C0)#Width"><![CDATA[301]]></Data>
+      <Data Name="Definitions(C0)[0]#HeaderText"><![CDATA[min]]></Data>
+      <Data Name="Definitions(C0)[1]#HeaderText"><![CDATA[max]]></Data>
+      <Data Name="Definitions(C1)#HeaderText"><![CDATA[credit score]]></Data>
+      <Data Name="Definitions(C1)#Width"><![CDATA[319]]></Data>
+      <Data Name="Definitions(C1)[0]#HeaderText"><![CDATA[min]]></Data>
+      <Data Name="Definitions(C1)[1]#HeaderText"><![CDATA[max]]></Data>
+    </ResourceSet>
+  </Resources>
+</DT></definition>
+</model.dt:DecisionTable>
