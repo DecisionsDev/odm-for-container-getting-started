@@ -23,7 +23,7 @@ Do the following tasks before you start the tutorial:
 -   Install [ODM for Developers](https://hub.docker.com/r/ibmcom/odm/), and note the URLs of your instances of the Decision Center Business console and the Rule Execution Server console.
 -   Download [MiniLoan Service.zip](../../Miniloan%20Service.zip?raw=1)
 -   Download [miniloan-test.xlsx](../../miniloan-test.xlsx?raw=1)
--   Download [execution-payload.json](../../execution-payload.json?raw=1)
+-   Download [execution-payload.json](../../execution-payload.json)
 
 ## Best practices
 
