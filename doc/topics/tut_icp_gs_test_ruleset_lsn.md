@@ -79,7 +79,7 @@ You test the execution of the Miniloan\_ServiceRuleset ruleset in a command term
 
  Where decisionserviceURL is the URL you copied in [Step 2: Testing the ruleset for REST execution](../topics/tut_icp_gs_test_ruleset_lsn.md#step-2-testing-the-ruleset-for-rest-execution).
 
- The command issues a POST request for the URL of your decision service. The execution parameters are stored in the test JSON file that is delivered with the Miniloan Service sample project.
+ The command issues a POST request for the URL of your decision service. The execution parameters are stored in the execution-payload.json file.
 
 4.  Press Enter. The command returns the following output:
 

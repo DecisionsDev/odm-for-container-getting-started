@@ -63,7 +63,7 @@ You implement the policy that shortens the minimum length of a loan to 6 months.
 2.   Open the validation folder, which contains the rules for validating loan data. 
 3.   Click the **Add** button ![Image shows the Add button](../images/icon_merge_create_plus.jpg) button, and then click **New Rule**. 
 4.   Type the name **check duration**, and click **Create**. 
-5.   Copy and paste the following rule into the rule editor, or build the rule with the completion menu \(see the [Rule editor flash demo](http://public.dhe.ibm.com/software/websphere/techexchange/WODM/intellirule_viewlet_swf.html) on the IBM® Customer Support site for an English-only tour of the rule-editing features\). 
+5.   Copy and paste the following rule into the rule editor, or build the rule with the completion menu. 
     
     if
           the duration of 'the loan' is less than 6
