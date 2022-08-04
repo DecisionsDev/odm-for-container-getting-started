@@ -25,7 +25,7 @@ You import the Miniloan Service decision service into Decision Center, and then 
  **Note:** If you see that Miniloan Service is already available in the **Library** tab, you must remove it before you can import it again. Ask your administrator if you can remove the existing Miniloan Service decision service, and refer to the following page to learn how to remove a decision service from Decision Center: [Step 1: Deleting the decision service from Decision Center](../topics/tut_icp_gs_clean_db_lsn.md#step-1-deleting-the-decision-service-from-decision-center).
 
 3.  Click the **Import Decision Service** button ![Image shows the Import Decision Service button](../images/icon_import_dservice.jpg).
-4.  Click **Choose** to browse and then select the `Miniloan Service.zip` file, previously downloaded from GitHub.
+4.  Click **Choose** to browse and then select the `Miniloan Service.zip` file you previously downloaded ([MiniLoan Service.zip](../../Miniloan%20Service.zip?raw=1)).
 5.  Make sure **Use Decision Governance Framework** is not selected. To simplify the tutorial, you work in an ungoverned branch of the decision service.
 6.  Click **Import**. The Miniloan Service decision service automatically opens. You see the **Releases** and **Branches** tabs. Because you chose not to use the decision governance framework, you can see that the **Releases** tab is empty.
 7.   Open the **Branches** tab, and then click the **main** branch. A decision service can contain many projects. For simplicity, all the rules of Miniloan Service are contained in its top-level project, which has the same name as the decision service.
@@ -89,7 +89,7 @@ You explore and run the miniloan-test test suite. It is in the Getting Started f
 
 **Procedure**
 
-1.   Open the miniloan-test Excel file in GettingStartedDirectory/odm-for-dev-gettingstarted-master/Miniloan Service. 
+1.   Open the miniloan-test Excel file you previously downloaded ([miniloan-test.xlsx](../../miniloan-test.xlsx?raw=1)).
 
  The Excel scenario file contains worksheets. The **Scenarios** sheet contains data to execute the rules.
 

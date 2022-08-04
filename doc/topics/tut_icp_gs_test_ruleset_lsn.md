@@ -72,10 +72,10 @@ You test the execution of the Miniloan\_ServiceRuleset ruleset in a command term
 **Procedure**
 
 1.  Open a command terminal.
-2.  Go to the location where you extracted the Miniloan Service on your computer \(GettingStartedDirectory/odm-for-dev-gettingstarted-master/Miniloan Service\).
+2.  Go to the location where you previously downloaded ([execution-payload.json](../../execution-payload.json?raw=1)).
 3.  Type the following command: 
     
-    curl -X POST -H "Content-Type: application/json" decisionserviceURL -u resExecutor:resExecutor -d "@test.json"  
+    curl -X POST -H "Content-Type: application/json" decisionserviceURL -u resExecutor:resExecutor -d "@execution-payload.json"  
 
  Where decisionserviceURL is the URL you copied in [Step 2: Testing the ruleset for REST execution](../topics/tut_icp_gs_test_ruleset_lsn.md#step-2-testing-the-ruleset-for-rest-execution).
 
