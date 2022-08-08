@@ -1,9 +1,14 @@
-# Getting started with the Operational Decision Manager for Developers Docker image
+# Getting started with the Operational Decision Manager for container 
 
 ## Audience
 
-This tutorial is for technical and business users who want an introduction to authoring and managing business rules in Operational Decision Manager (ODM) for Developers.
-
+This tutorial is for technical and business users who want an introduction to authoring and managing business rules in Operational Decision Manager (ODM) running in container environment.
+Here is the differents Operation Decision Manager offering where you can use this getting started:
+    * [IBM Operational Decision Manager for Developers docker image](https://hub.docker.com/r/ibmcom/odm/) - Used to deploy an ODM evaluation in docker environments.
+    * [IBM Operational Decision Manager for Developers kubernetes environment](https://artifacthub.io/packages/helm/ibm-charts/ibm-odm-dev/22.1.0) - Used to deploy an ODM evaluation in Certified Kubernetes environments.
+    * [IBM Operational Decision Manager for production on Certified Kubernetes](https://www.ibm.com/docs/en/odm/8.11.0?topic=kubernetes-installing-odm-production) - Used to deploy an ODM production in Certified Kubernetes environments.
+    * [IBM Operational Decision Manager for IBM Cloud Pak for Business Automation](https://www.ibm.com/docs/en/cloud-paks/cp-biz-automation/22.0.1?topic=capabilities-operational-decision-manager) - Used in the context of the Cloud Pak for Business Automation
+    
 ## Time required
 
 1 hour
