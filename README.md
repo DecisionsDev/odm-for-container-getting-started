@@ -3,7 +3,7 @@
 ## Audience
 
 This tutorial is for technical and business users who want an introduction to authoring and managing business rules in Operational Decision Manager (ODM) running in container environment.
-Here is the differents Operation Decision Manager offering where you can use this getting started:
+Here is the differents Operational Decision Manager offering where you can use this getting started:
    * [IBM Operational Decision Manager for Developers docker image](https://hub.docker.com/r/ibmcom/odm/) - Used to deploy an ODM evaluation in docker environments.
    * [IBM Operational Decision Manager for Developers kubernetes environment](https://artifacthub.io/packages/helm/ibm-charts/ibm-odm-dev/22.1.0) - Used to deploy an ODM evaluation in Certified Kubernetes environments.
    * [IBM Operational Decision Manager for production on Certified Kubernetes](https://www.ibm.com/docs/en/odm/8.11.0?topic=kubernetes-installing-odm-production) - Used to deploy an ODM production in Certified Kubernetes environments.
