@@ -36,7 +36,7 @@ This tutorial uses the Miniloan Service decision service. To further explore the
 -   [Task 4: Exploring and testing the ruleset](doc/topics/tut_icp_gs_test_ruleset_lsn.md)
 -   [Task 5: Cleaning out databases](doc/topics/tut_icp_gs_clean_db_lsn.md)
 
-# Issues and contributions
+## Issues and contributions
 
 For issues relating specifically to this tutorial, please use the [GitHub issue tracker](https://github.com/DecisionsDev/odm-for-container-getting-started/issues). For more general issue relating to IBM Operational Decision Manager you can [get help]([https://developer.ibm.com/odm/home/connect/](https://community.ibm.com/community/user/automation/communities/community-home?CommunityKey=c0005a22-520b-4181-bfad-feffd8bdc022)) through the ODM community or, if you have production licenses for Operational Decision Manager, via the usual support channels.
 
