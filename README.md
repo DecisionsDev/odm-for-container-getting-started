@@ -1,4 +1,4 @@
-# Getting started with the Operational Decision Manager for Developers Docker image
+# Getting started with Operational Decision Manager for Developers Docker image
 
 ## Audience
 
