@@ -1,6 +1,6 @@
 # Task 2: Creating and editing rules
 
-In this task, you learn how to search for rules, modify a decision table, and create an action rule in the Business console.
+In this task, you learn how to search for rules, modify a decision table, and create an action rule in the Business console..
 
 Business experts develop and deploy decision services in Decision Center. Distributed business teams can collaborate through the web-based environment to create and maintain decision logic. They can modify rules to meet changes in policies without changing the applications that call the rules. They can apply business decisions immediately without developers having to recode production applications. 
 
