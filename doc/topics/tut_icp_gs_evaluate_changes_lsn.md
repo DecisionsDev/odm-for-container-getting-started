@@ -4,9 +4,9 @@ In this task, you look at the rules that a loan company uses to determine whethe
 
 When a company implements a decision, it becomes a business policy. Policies can cover all aspects of a company's operations, for example, determining prices, recommending products, and evaluating eligibility. With ODM, you convert these policies into business rules that production applications use to automatically apply decisions. When decision making is separate from application code, business experts can more easily define and manage the business logic.
 
-The process of capturing a business policies in rules happens in two steps: 
+The process of capturing a business policy in rules happens in two steps: 
 
-1.   Create a vocabulary to express the policies.  
+1.   Create a vocabulary to express the policy.  
 2.   Transform the logic of the business policy into if-then statements, or rules. 
 
 This tutorial demonstrates how ODM increases a company's ability to respond to changes in business, and how much time and effort the product can save business experts in updating business logic.
@@ -85,7 +85,7 @@ Business rules come in two formats:
 
 ## Step 5: Creating and running a test suite
 
-You explore and run the miniloan-test test suite. It is in the Getting Started for ODM for Developers sample project that you downloaded and extracted.
+You explore and run the miniloan-test test suite. It is included in the 'Getting Started with ODM for Developers' sample project that you downloaded and extracted.
 
 **Procedure**
 
