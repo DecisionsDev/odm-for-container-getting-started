@@ -1,12 +1,12 @@
-# Getting started with the Operational Decision Manager for container 
+# Getting Started with IBM Operational Decision Manager for Containers 
 
 ## Audience
 
-This tutorial is for technical and business users who want an introduction to business rules authoring and management, with IBM Operational Decision Manager (ODM) running in a container environment. Here are the different ODM offerings where you can use this getting started:
-   * [IBM Operational Decision Manager for Developers](https://hub.docker.com/r/ibmcom/odm/) - to deploy ODM in Docker environments, for evaluation and development purposes
-   * [IBM Operational Decision Manager for Developers on Certified Kubernetes](https://artifacthub.io/packages/helm/ibm-charts/ibm-odm-dev/22.1.0) - to deploy ODM on Certified Kubernetes environments, for evaluation and development purposes 
-   * [IBM Operational Decision Manager for production on Certified Kubernetes](https://www.ibm.com/docs/en/odm/8.11.0?topic=kubernetes-installing-odm-production) - to deploy ODM on Certified Kubernetes environments, for production use
-   * [IBM Operational Decision Manager in IBM Cloud Pak for Business Automation](https://www.ibm.com/docs/en/cloud-paks/cp-biz-automation/22.0.1?topic=capabilities-operational-decision-manager) - to deploy ODM on Red Hat OpenShift in the context of IBM Cloud Pak for Business Automation
+This tutorial is for technical and business users who want an introduction to business rules authoring and management with IBM Operational Decision Manager (ODM) running in a container environment. Here are the different offerings where you can use this Getting Started tutorial:
+   * [IBM Operational Decision Manager for Developers](https://hub.docker.com/r/ibmcom/odm/) - To deploy ODM in Docker environments, for evaluation and development purposes.
+   * [IBM Operational Decision Manager for Developers on Certified Kubernetes](https://artifacthub.io/packages/helm/ibm-charts/ibm-odm-dev/22.1.0) - To deploy ODM on Certified Kubernetes environments, for evaluation and development purposes. 
+   * [IBM Operational Decision Manager for production on Certified Kubernetes](https://www.ibm.com/docs/en/odm/8.11.0?topic=kubernetes-installing-odm-production) - To deploy ODM on Certified Kubernetes environments, for production use.
+   * [IBM Operational Decision Manager in IBM Cloud Pak for Business Automation](https://www.ibm.com/docs/en/cloud-paks/cp-biz-automation/22.0.1?topic=capabilities-operational-decision-manager) - To deploy ODM on RedHat OpenShift in the context of IBM Cloud Pak for Business Automation.
 
 
 ## Time required
@@ -21,7 +21,7 @@ This tutorial does not cover decision service development in Rule Designer, coll
 
 ## Additional project
 
-This tutorial uses the Miniloan Service decision service. To further explore the development components, you can use the following sample project, which come preloaded in the Decision Center Business console:
+This tutorial uses the Miniloan Service decision service. To further explore the development components, you can use the following sample project, which comes preloaded in the Decision Center Business console:
 
 |Project|Description|
 |------|-----------|
@@ -38,7 +38,7 @@ This tutorial uses the Miniloan Service decision service. To further explore the
 
 ## Issues and contributions
 
-For issues relating specifically to this tutorial, please use the [GitHub issue tracker](https://github.com/DecisionsDev/odm-for-container-getting-started/issues). For more general issue relating to IBM Operational Decision Manager you can [get help]([https://developer.ibm.com/odm/home/connect/](https://community.ibm.com/community/user/automation/communities/community-home?CommunityKey=c0005a22-520b-4181-bfad-feffd8bdc022)) through the ODM community or, if you have production licenses for Operational Decision Manager, via the usual support channels.
+For issues specifically related  to this tutorial, please use the [GitHub issue tracker](https://github.com/DecisionsDev/odm-for-container-getting-started/issues). For more general issues related to IBM Operational Decision Manager, you can [get help]([https://developer.ibm.com/odm/home/connect/](https://community.ibm.com/community/user/automation/communities/community-home?CommunityKey=c0005a22-520b-4181-bfad-feffd8bdc022)) from the ODM community or, if you own production licenses for Operational Decision Manager, through the usual support channels.
 
 ## Licensing information
 
