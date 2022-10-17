@@ -67,7 +67,7 @@ http://(host port)/DecisionService/rest/v1/mydeployment/1.0/Miniloan_ServiceRule
 
 ## Step 3 \(Optional\): Testing the execution of the ruleset by using cURL
 
-You test the execution of the Miniloan\_ServiceRuleset ruleset in a command terminal by using cURL, a command-line tool for getting or sending files by using URL syntax. This step is optional. If you do not wish to install cURL, you cannot perform this step. It is recommended to go through this step even if you choose not to perform it, as it shows an example of how to execute a ruleset by using an external client.
+You test the execution of the Miniloan\_ServiceRuleset ruleset in a command terminal by using cURL, a command-line tool for getting or sending files by using the URL syntax. This step is optional. If you do not wish to install cURL, you cannot perform this step. It is recommended to go through this step even if you choose not to perform it, as it shows an example of how to execute a ruleset by using an external client.
 
 **Procedure**
 
