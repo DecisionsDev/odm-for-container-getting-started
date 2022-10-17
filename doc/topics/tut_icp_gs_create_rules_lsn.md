@@ -61,7 +61,7 @@ You implement the policy that shortens the minimum length of a loan to 6 months.
 
 1.   Click **main** in the breadcrumbs below the top banner to return to the contents of the branch. 
 2.   Open the validation folder, which contains the rules for validating loan data. 
-3.   Click the **Add** button ![Image shows the Add button](../images/icon_merge_create_plus.jpg) button, and then click **New Rule**. 
+3.   Click the **Add** button ![Image shows the Add button](../images/icon_merge_create_plus.jpg), and then click **New Rule**. 
 4.   Type the name **check duration**, and click **Create**. 
 5.   Copy and paste the following rule into the rule editor, or build the rule with the completion menu. 
     
