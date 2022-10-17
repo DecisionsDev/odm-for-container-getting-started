@@ -44,9 +44,9 @@ You check the decision table and find an error. You correct the error, save your
 
 **Procedure**
 
-1.   Hover over one of the fields with a gold triangle in the decision table. It shows an overlap error:
+1.   Hover over one of the fields with a golden triangle in the decision table. It shows an overlap error:
 
- ![Image shows the error message displayed when you hover the gold triangle](../images/scrn_classic_dterror.jpg)
+ ![Image shows the error message displayed when you hover the golden triangle](../images/scrn_classic_dterror.jpg)
 
 2.   Click **Edit** to reopen the table. 
 3.   Double-click the credit score condition for row 2, change the value 200 to 300, and press Enter. This change eliminates the overlap in rows 1 and 2. 
