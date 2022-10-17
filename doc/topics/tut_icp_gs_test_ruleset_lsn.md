@@ -18,7 +18,7 @@ You view the RuleApp in the Rule Execution Server console and check the status o
 
  ![Image shows the navigation menu](../images/scrn_deploy_resnav_icp.jpg)
 
-4.   Click /Miniloan\_ServiceRuleset/1.0 to view the details of the ruleset in the Ruleset View. The status of the ruleset is enabled, which indicates that ruleset can be run:
+4.   Click /Miniloan\_ServiceRuleset/1.0 to view the details of the ruleset in the Ruleset View. The status of the ruleset is enabled, which indicates that the ruleset can be run:
 
  ![Image shows details details of the ruleset](../images/scrn_deploy_view_icp.jpg)
 
