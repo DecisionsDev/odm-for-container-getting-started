@@ -1,20 +1,20 @@
 # Task 4: Exploring and testing the ruleset
 
-In this task, you learn how to open and explore a RuleApp in the Rule Execution Server console, and test a ruleset with a REST request.
+In this task, you learn how to open and explore a RuleApp in the Decision Server console, and test a ruleset with a REST request.
 
-The Rule Execution Server console is used to manage and execute rulesets, trace executions, and display the rules in RuleApps.
+The Decision Server console is used to manage and execute rulesets, trace executions, and display the rules in RuleApps.
 
-In this task, you explore your deployed artifacts in the Rule Execution Server console. You make sure the status of the ruleset is enabled for execution, and send a JSON-formatted REST request to the ruleset.
+In this task, you explore your deployed artifacts in the Decision Server console. You make sure the status of the ruleset is enabled for execution, and send a JSON-formatted REST request to the ruleset.
 
 ## Step 1: Viewing the deployed RuleApp
 
-You view the RuleApp in the Rule Execution Server console and check the status of the ruleset.
+You view the RuleApp in the Decision Server console and check the status of the ruleset.
 
 **Procedure**
 
-1.   Sign in to your instance of the Rule Execution Server console by using odmAdmin as the user name and password. 
+1.   Sign in to your instance of the Decision Server console by using odmAdmin as the user name and password. 
 2.  Click the **Explorer** tab.
-3.   In the Navigator, expand **RuleApps**, and then /mydeployment/1.0. You see that the Rule Execution Server console contains version 1.0 of mydeployment, which contains version 1.0 of Miniloan\_ServiceRuleset:
+3.   In the Navigator, expand **RuleApps**, and then /mydeployment/1.0. You see that the Decision Server console contains version 1.0 of mydeployment, which contains version 1.0 of Miniloan\_ServiceRuleset:
 
  ![Image shows the navigation menu](../images/scrn_deploy_resnav_icp.jpg)
 
@@ -25,7 +25,7 @@ You view the RuleApp in the Rule Execution Server console and check the status o
 
 ## Step 2: Testing the ruleset with a REST request
 
-You test the ruleset with a REST request in the Rule Execution Server console.
+You test the ruleset with a REST request in the Decision Server console.
 
 **Procedure**
 
@@ -87,7 +87,7 @@ You test the execution of the Miniloan\_ServiceRuleset ruleset in a command term
 
  It shows that the loan is rejected because the debt-to-income ratio is too high.
 
-You have finished the tutorial, and no longer need the decision service in Decision Center and the Rule Execution Server console. In the next task, you remove the Miniloan decision service from Decision Center and the Rule Execution Server console. 
+You have finished the tutorial, and no longer need the decision service in Decision Center and the Decision Server console. In the next task, you remove the Miniloan decision service from Decision Center and the Rule Execution Server console. 
 
 [**Next** ![](../images/next.jpg)](../topics/tut_icp_gs_clean_db_lsn.md)
 
