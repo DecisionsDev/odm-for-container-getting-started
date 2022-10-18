@@ -15,7 +15,7 @@ This tutorial is for technical and business users who want an introduction to bu
 
 ## Learning objectives
 
-Through a tour of Decision Center and the Rule Execution Server console, you learn how to collaborate with other users to create and modify rules in decision services, manage changes, run tests, deploy rule applications, and test and execute deployed rules as rulesets.
+Through a tour of Decision Center and the Decision Server console, you learn how to collaborate with other users to create and modify rules in decision services, manage changes, run tests, deploy rule applications, and test and execute deployed rules as rulesets.
 
 This tutorial does not cover decision service development in Rule Designer, collaborative development in the decision governance framework, or simulations in Decision Center.
 
