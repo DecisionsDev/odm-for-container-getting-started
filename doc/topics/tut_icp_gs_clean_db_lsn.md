@@ -1,6 +1,6 @@
 # Task 5: Cleaning out databases
 
-In this task, you learn how to delete projects from Decision Center and the Rule Execution Server console.
+In this task, you learn how to delete projects from Decision Center and the Decision Server console.
 
 **About this task**
 
@@ -21,13 +21,13 @@ A warning message opens. Make sure that the message shows the decision service t
 
 5.  Click **Delete**.
 
-## Step 2: Removing the RuleApp from the Rule Execution Server console
+## Step 2: Removing the RuleApp from the Decision Server console
 
-You remove the decision artifacts from the Rule Execution Server console.
+You remove the decision artifacts from the Decision Server console.
 
 **Procedure**
 
-1.  Open the Rule Execution Server console. 
+1.  Open the Decision Server console. 
 2.  Log in as an administrator by entering `odmAdmin` as the user name and password.
 3.   Open the **Explorer** tab, and click **RuleApps** under **Navigator**. 
 4.   Select the mydeployment RuleApp, and click **Remove** to delete it. A warning message opens. Make sure that the message shows the RuleApp that you want to delete.
@@ -42,7 +42,7 @@ You remove the decision artifacts from the Rule Execution Server console.
     **Note:** You can also remove the Miniloan\_Service\_brm.Branch\_xx\_xx library. This library was created when you ran the test suite.
 
 
-You have completed the tutorial and removed the decision service files from Decision Center and the Rule Execution Server console. You now know some of the key features in Operational Decision Manager for Developers.
+You have completed the tutorial and removed the decision service files from Decision Center and the Decision Server console. You now know some of the key features in Operational Decision Manager for Developers.
 
 [![](../images/home.jpg) **Back to table of contents**](../../README.md)
 
