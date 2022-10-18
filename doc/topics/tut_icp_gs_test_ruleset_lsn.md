@@ -63,7 +63,7 @@ http://(host port)/DecisionService/rest/v1/mydeployment/1.0/Miniloan_ServiceRule
 
  It shows that the loan is rejected because the debt-to-income ratio is too high.
 
-9.  Log out of the Rule Execution Server console.
+9.  Log out of the Decision Server console.
 
 ## Step 3 \(Optional\): Testing the execution of the ruleset by using cURL
 
@@ -87,7 +87,7 @@ You test the execution of the Miniloan\_ServiceRuleset ruleset in a command term
 
  It shows that the loan is rejected because the debt-to-income ratio is too high.
 
-You have finished the tutorial, and no longer need the decision service in Decision Center and the Decision Server console. In the next task, you remove the Miniloan decision service from Decision Center and the Rule Execution Server console. 
+You have finished the tutorial, and no longer need the decision service in Decision Center and the Decision Server console. In the next task, you remove the Miniloan decision service from Decision Center and the Decision Server console. 
 
 [**Next** ![](../images/next.jpg)](../topics/tut_icp_gs_clean_db_lsn.md)
 
