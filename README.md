@@ -4,9 +4,9 @@
 
 This tutorial is for technical and business users who want an introduction to business rules authoring and management with IBM Operational Decision Manager (ODM) running in a container environment. Here are the different offerings where you can use this Getting Started tutorial:
    * [IBM Operational Decision Manager for Developers](https://hub.docker.com/r/ibmcom/odm/) - To deploy ODM in Docker environments, for evaluation and development purposes.
-   * [IBM Operational Decision Manager for Developers on Certified Kubernetes](https://artifacthub.io/packages/helm/ibm-charts/ibm-odm-dev/22.1.0) - To deploy ODM on Certified Kubernetes environments, for evaluation and development purposes. 
-   * [IBM Operational Decision Manager for production on Certified Kubernetes](https://www.ibm.com/docs/en/odm/8.11.0?topic=kubernetes-installing-odm-production) - To deploy ODM on Certified Kubernetes environments, for production use.
-   * [IBM Operational Decision Manager in IBM Cloud Pak for Business Automation](https://www.ibm.com/docs/en/cloud-paks/cp-biz-automation/22.0.1?topic=capabilities-operational-decision-manager) - To deploy ODM on RedHat OpenShift in the context of IBM Cloud Pak for Business Automation.
+   * [IBM Operational Decision Manager for Developers on Certified Kubernetes](https://artifacthub.io/packages/helm/ibm-charts/ibm-odm-dev/22.2.0) - To deploy ODM on Certified Kubernetes environments, for evaluation and development purposes. 
+   * [IBM Operational Decision Manager for production on Certified Kubernetes](https://www.ibm.com/docs/en/odm/8.11.1?topic=kubernetes-installing-odm-production) - To deploy ODM on Certified Kubernetes environments, for production use.
+   * [IBM Operational Decision Manager in IBM Cloud Pak for Business Automation](https://www.ibm.com/docs/en/cloud-paks/cp-biz-automation/22.0.2?topic=capabilities-operational-decision-manager) - To deploy ODM on RedHat OpenShift in the context of IBM Cloud Pak for Business Automation.
 
 
 ## Time required
