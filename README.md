@@ -1,5 +1,6 @@
 # Getting Started with IBM Operational Decision Manager for Containers 
 
+
 ## Audience
 
 This tutorial is for technical and business users who want an introduction to business rules authoring and management with IBM Operational Decision Manager (ODM) running in a container environment. Here are the different offerings where you can use this Getting Started tutorial:
