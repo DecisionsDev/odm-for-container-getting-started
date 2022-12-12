@@ -1,0 +1,11 @@
+{"loan": {
+    "amount": 500000,
+    "duration": 240,
+    "yearlyInterestRate": 0.05
+ },
+  "__DecisionID__": "Test",
+  "borrower": {
+    "name": "Joe",
+    "creditScore": 600,
+    "yearlyIncome": 80000
+  }}
