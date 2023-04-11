@@ -12,17 +12,17 @@ You review the changes to Miniloan Service.
 
 **Procedure**
 
-1.   Log in to the Business console as odmAdmin. In the **HOME** tab, in **Recent Activities**, you see the action rule and decision table that rtsUser1 modified.
-2.   Hover over **repayment and score**, and click **main** in the rule description to go directly to the main branch of **Miniloan Service**. 
-3.   Click the **Snapshots** tab. 
+1.   Log in to the Business console as `odmAdmin`. In the **HOME** tab, in **Recent Activities**, you see the action rule and decision table that `rtsUser1` modified.
+2.   Hover over **repayment and score**, and click **main** in the rule description to go directly to the main branch of **Miniloan Service**.
+3.   Click the **Snapshots** tab.
 4.   Click **Initial State**. You see the state of the branch when you made the snapshot.
 5.   Click **Compare**. The Business console proposes to compare the Initial State snapshot with the current state of the project.
 6.   Click **Compare**. By default, the console shows the updated table.
-7.   Click **Added** to see the new rule. 
+7.   Click **Added** to see the new rule.
 8.   Click **Updated** to see the updated rule.
-9.   Hover over the row for **repayment and score**, and click the **Compare** button in the row to see the differences between the two versions of the decision table. 
-10.  Close the version comparison. 
-11.  Click **main** in the breadcrumbs to leave the snapshot. 
+9.   Hover over the row for **repayment and score**, and click the **Compare** button in the row to see the differences between the two versions of the decision table.
+10.  Close the version comparison.
+11.  Click **main** in the breadcrumbs to leave the snapshot.
 
 ## Step 2: Rerunning the test suite
 
@@ -31,7 +31,7 @@ You check that the changes to the loan approval policies produce the expected be
 **Procedure**
 
 1.  Click the **Tests** tab. This tab contains the existing test suites, and the reports created by the test suites.
-2.   Hover over the existing test suite row, and click the **Run** button ![Image shows the run button](../images/icon_run_testsuite.jpg). 
+2.   Hover over the existing test suite row, and click the **Run** button ![Image shows the run button](../images/icon_run_testsuite.jpg).
 3.   Click **OK**, wait until the status shows a check mark, and click the name of the report. The report shows that 100% of the scenarios are successful because they generate the expected results.
 4.  Close the report.
 
@@ -53,18 +53,17 @@ Now that you are satisfied with the results, you deploy a RuleApp from the decis
 4.  Click the **Targets** tab.
 5.  Select **Decision Service Execution** and click the **Save** button.
 6.  Type Miniloan with Summer policy, and click **Create new version**.
-7.   Click the **Deploy** button ![""](../images/icon_deploy.jpg) in the upper right corner of the window. A dialog box opens with a summary of the deployment configuration. It gives you the option of deploying to a server or creating a RuleApp archive. 
+7.   Click the **Deploy** button ![""](../images/icon_deploy.jpg) in the upper right corner of the window. A dialog box opens with a summary of the deployment configuration. It gives you the option of deploying to a server or creating a RuleApp archive.
 8.   Leave **Server** selected in the dialog, and click **Deploy**. A message opens with the status of the deployment:
 
  ![Image shows the status of the deployment.](../images/scrn_deploystatus.jpg)
 
 9.   Click **OK** in the deployment status message. The **Reports** subtab opens in the **Deployments** tab.
 10.  Click the name of the report when its status shows a check mark. The report opens and shows a summary of the deployment. It includes the target server, the configuration name, the ruleset, the deployment time, the version of the ruleset, and the deployment snapshot.
-11.  Click the **Close** button ![The image shows the close button](../images/icon_cloud_deploy_close.jpg) in the upper right corner of the window to close the report, and log out of the Business console. 
+11.  Click the **Close** button ![The image shows the close button](../images/icon_cloud_deploy_close.jpg) in the upper right corner of the window to close the report, and log out of the Business console.
 
-In the next task, you explore your ruleset in the Decision Server console and test it. 
+In the next task, you explore your ruleset in the Decision Server console and test it.
 
 [**Next** ![Next icon](../images/next.jpg)](../topics/tut_icp_gs_test_ruleset_lsn.md)
 
 [![](../images/home.jpg) **Back to table of contents**](../../README.md)
-
