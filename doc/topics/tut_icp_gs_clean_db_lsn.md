@@ -13,7 +13,7 @@ You remove the Miniloan Service decision service from the Decision Center databa
 **Procedure**
 
 1.   Open the Decision Center Business console.
-2.  Log in as an administrator as `odmAdmin`. You must be an administrator to remove the decision service. The `rtsUser1` login cannot remove the decision service.
+2.  Log in as **admin user**. You must be an administrator to remove the decision service. The **business user** cannot remove the decision service.
 3.  Open the **Library** tab.
 4.  Hover over the Miniloan Service box, open the drop-down menu, and click **Delete**:![Image shows the drop-down menu](../images/scrn_delete_decision_service.jpg)
 
@@ -28,7 +28,7 @@ You remove the decision artifacts from the Decision Server console.
 **Procedure**
 
 1.  Open the Decision Server console.
-2.  Log in as an administrator as `odmAdmin`.
+2.  Log in as **admin user**.
 3.  Open the **Explorer** tab, and click **RuleApps** under **Navigator**.
 4.  Select the mydeployment RuleApp, and click **Remove** to delete it. A warning message opens. Make sure that the message shows the RuleApp that you want to delete.
 5.  Click **Confirm** in the warning message. The console deletes your RuleApp. The RuleApp view opens, and it no longer shows your RuleApp.

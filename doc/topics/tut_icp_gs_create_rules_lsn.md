@@ -17,7 +17,7 @@ You do a search to find the rules in the decision service that handle the credit
 
 **Procedure**
 
-1.  Log in to the Business console as `rtsUser1`.
+1.  Log in to the Business console as **business user**.
 2.  Open the **Library** tab.
 3.  Hover over the Miniloan Service box, and click anywhere except the name to expand it. Then click **main** under **Recently updated branches** to open the **main** branch.
 4.   In the **Search for rules** field, type score and press Enter. The results show all the action rules and decision tables in which the word score occurs. You look at all the rules, and conclude that you must edit the **repayment and score** decision table.

@@ -12,7 +12,7 @@ You review the changes to Miniloan Service.
 
 **Procedure**
 
-1.   Log in to the Business console as `odmAdmin`. In the **HOME** tab, in **Recent Activities**, you see the action rule and decision table that `rtsUser1` modified.
+1.   Log in to the Business console as **admin user**. In the **HOME** tab, in **Recent Activities**, you see the action rule and decision table that the **business user** modified.
 2.   Hover over **repayment and score**, and click **main** in the rule description to go directly to the main branch of **Miniloan Service**.
 3.   Click the **Snapshots** tab.
 4.   Click **Initial State**. You see the state of the branch when you made the snapshot.

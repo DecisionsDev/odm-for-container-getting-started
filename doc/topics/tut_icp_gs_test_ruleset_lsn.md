@@ -12,7 +12,7 @@ You view the RuleApp in the Decision Server console and check the status of the 
 
 **Procedure**
 
-1.   Sign in to your instance of the Decision Server console as `odmAdmin`. 
+1.   Sign in to your instance of the Decision Server console as **admin user**. 
 2.  Click the **Explorer** tab.
 3.   In the Navigator, expand **RuleApps**, and then /mydeployment/1.0. You see that the Decision Server console contains version 1.0 of mydeployment, which contains version 1.0 of Miniloan\_ServiceRuleset:
 

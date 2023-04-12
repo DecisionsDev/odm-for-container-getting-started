@@ -20,7 +20,7 @@ You import the Miniloan Service decision service into Decision Center, and then 
 **Procedure**
 
 1.   Open the Decision Center Business console.
-2.   Log in as `odmAdmin`.
+2.   Log in as **admin user**.
 
  **Note:** If you see that Miniloan Service is already available in the **Library** tab, you must remove it before you can import it again. Ask your administrator if you can remove the existing Miniloan Service decision service, and refer to the following page to learn how to remove a decision service from Decision Center: [Step 1: Deleting the decision service from Decision Center](../topics/tut_icp_gs_clean_db_lsn.md#step-1-deleting-the-decision-service-from-decision-center).
 
@@ -148,7 +148,7 @@ You take a snapshot of the rules before they are changed.
 
 2.   In the **Take a Snapshot** window, enter "Initial State" as the name, and "Snapshot of the initial state of the branch" as the description, and then click **Create**. You can now find the snapshot in the **Snapshots** tab. A snapshot captures the state of a branch at a specific moment in time. You cannot edit the contents of a snapshot, but you can use a snapshot to restore a branch to a previous state.
 
-3.   Click **Log out** in the drop-down menu next to the user name odmAdmin.
+3.   Click **Log out** in the drop-down menu next to the user name of the **admin user**.
 
 In the next task, you search for rules, modify a decision table, and create an action rule in the Business console.
 

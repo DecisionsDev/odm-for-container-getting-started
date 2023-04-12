@@ -11,10 +11,13 @@ The tutorial uses a simple decision service that has only one project. The rules
 |eligibility|These rules determine whether the loan can be approved.|
 |validation|These rules make preliminary checks to determine whether data is rejected immediately.|
 
-As you go through the tutorial, you log in as two different users to get a feel for the collaboration that takes place in the Business console. The two users log in with different user names:
+As you go through the tutorial, you log in as two different users to get a feel for the collaboration that takes place in the Business console. The two users log in with different roles:
 
--   `odmAdmin`: A manager who initiates, reviews, and deploys changes.
--   `rtsUser1`: A rule author who implements the change.
+-   An **admin user** with *ODM Administrator* role: A manager who initiates, reviews, and deploys changes.
+-   A **business user** with *ODM Business User* role: A rule author who implements the change.
+
+> **Note**
+> See below which users to use and how to get their passwords depending on the type of deployment.
 
 ## Prerequisites
 
@@ -22,17 +25,37 @@ As you go through the tutorial, you log in as two different users to get a feel 
 
   - [MiniLoan Service.zip](../../Miniloan%20Service.zip?raw=1)
   - [miniloan-test.xlsx](../../miniloan-test.xlsx?raw=1)
-  - [execution-payload.json](../../execution-payload.json?raw=1). As it is a text file, you need to right-click on the link and click on `Save link as`.
+  - [execution-payload.json](../../execution-payload.json?raw=1)
+    As it is a text file, you need to right-click on the link and click on `Save link as`.
 
 2. Install ODM, and note the URLs of your instances of the Decision Center Business console and the Decision Server console.
 
-  - For [ODM for Developers](https://hub.docker.com/r/ibmcom/odm/), Decision Center Business console will be available at http://localhost:9060/decisioncenter and Decision Server console will be deployed at http://localhost:9060/res.
+  - To install **ODM for Developers**, follow this [documentation](https://hub.docker.com/r/ibmcom/odm/).
+  Decision Center Business console will be available at http://localhost:9060/decisioncenter and Decision Server console will be deployed at http://localhost:9060/res.
 
-  - For [ODM for Developers on Certified Kubernetes](https://artifacthub.io/packages/helm/ibm-odm-charts/ibm-odm-dev/22.2.0), refer to [Accessing ODM](https://artifacthub.io/packages/helm/ibm-odm-charts/ibm-odm-dev/22.2.0#accessing-odm) section to retrieve the URLs.
+  - To install **ODM for Developers on Certified Kubernetes**, follow this [documentation](https://artifacthub.io/packages/helm/ibm-odm-charts/ibm-odm-dev/22.2.0).
+  Refer to [Accessing ODM](https://artifacthub.io/packages/helm/ibm-odm-charts/ibm-odm-dev/22.2.0#accessing-odm) section to retrieve the URLs.
 
-  * For [ODM for production on Certified Kubernetes](https://www.ibm.com/docs/en/odm/8.11.1?topic=production-installing-helm-release-odm), refer to [Completing post-deployment tasks](https://www.ibm.com/docs/en/odm/8.11.1?topic=production-completing-post-deployment-tasks) to retrieve the URLs.
+  * To install **ODM for production on Certified Kubernetes**, follow this [documentation](https://www.ibm.com/docs/en/odm/8.11.1?topic=production-installing-helm-release-odm).
+  Refer to [Completing post-deployment tasks](https://www.ibm.com/docs/en/odm/8.11.1?topic=production-completing-post-deployment-tasks) to retrieve the URLs.
 
-  * For [ODM in IBM Cloud Pak for Business Automation](https://www.ibm.com/docs/en/cloud-paks/cp-biz-automation/22.0.2?topic=deployment-creating-production), refer to [Identifying the services](https://www.ibm.com/docs/en/cloud-paks/cp-biz-automation/22.0.2?topic=manager-identifying-services)to retrieve the URLs.
+  * To install **ODM in IBM Cloud Pak for Business Automation in starter mode**, follow this [documentation](https://www.ibm.com/docs/en/cloud-paks/cp-biz-automation/22.0.2?topic=deployments-installing-cp4ba-multi-pattern-starter-deployment).
+  Refer to [Retrieve URLs for ODM in CP4BA starter mode and configure users](../topics/tut_icp_gs_odm_cp4ba_prereqs.md).
+
+3. Get the users and passwords to use.
+
+  - In **ODM for Developers**, the following users/password are defined:
+    * as admin user:`odmAdmin`/`odmAdmin`
+    * as business user: `rtsUser1`/`rtsUser1`.
+
+  - In **ODM for Developers on Certified Kubernetes**, by default, you can use `odmAdmin` as admin user and `rtsUser1` as business user.
+  Both users will use the defined **usersPassword** parameter, if used, or the custom configuration, if you choose to [Configure manually user access](https://artifacthub.io/packages/helm/ibm-odm-charts/ibm-odm-dev/22.2.0#configuring-user-access).
+
+  * In **ODM for production on Certified Kubernetes**, by default, you can use `odmAdmin` as admin user and `rtsUser1` as business user.
+  Both users will use the defined **usersPassword** parameter, if used, or the custom configuration, if you choose to [Configure manually user access](https://www.ibm.com/docs/en/odm/8.11.1?topic=production-configuring-user-access).
+
+  * In **ODM in IBM Cloud Pak for Business Automation in starter mode**, you can use the `cp4admin` as the admin user and add *ODM Business User* role to the `user1` user.
+  Refer to Refer to [Retrieve URLs for ODM in CP4BA starter mode and configure users](../topics/tut_icp_gs_odm_cp4ba_prereqs.md).
 
 ## Best practices
 
