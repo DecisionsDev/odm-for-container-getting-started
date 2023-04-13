@@ -29,7 +29,8 @@ The tutorial uses a simple decision service that has only one project. The rules
 
 2. Get the users and passwords to use.
 
-  As you go through the tutorial, you log in as two different users to get a feel for the collaboration that takes place in the Business console. The two users log in with different roles:
+   As you go through the tutorial, you log in as two different users to get a feel for the collaboration that takes place in the Business console. The two users log in with different roles:
+   
     -   An **admin user** with *ODM Administrator* role: A manager who initiates, reviews, and deploys changes.
     -   A **business user** with *ODM Business User* role: A rule author who implements the change.
 
