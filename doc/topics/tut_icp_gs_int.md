@@ -11,24 +11,9 @@ The tutorial uses a simple decision service that has only one project. The rules
 |eligibility|These rules determine whether the loan can be approved.|
 |validation|These rules make preliminary checks to determine whether data is rejected immediately.|
 
-As you go through the tutorial, you log in as two different users to get a feel for the collaboration that takes place in the Business console. The two users log in with different roles:
-
--   An **admin user** with *ODM Administrator* role: A manager who initiates, reviews, and deploys changes.
--   A **business user** with *ODM Business User* role: A rule author who implements the change.
-
-> **Note**
-> See below which users to use and how to get their passwords depending on the type of deployment.
-
 ## Prerequisites
 
-1. Download the following files before you start the tutorial:
-
-  - [MiniLoan Service.zip](../../Miniloan%20Service.zip?raw=1)
-  - [miniloan-test.xlsx](../../miniloan-test.xlsx?raw=1)
-  - [execution-payload.json](../../execution-payload.json?raw=1)
-    As it is a text file, you need to right-click on the link and click on `Save link as`.
-
-2. Install ODM, and note the URLs of your instances of the Decision Center Business console and the Decision Server console.
+1. Install ODM, and note the URLs of your instances of the Decision Center Business console and the Decision Server console.
 
   - To install **ODM for Developers**, follow this [documentation](https://hub.docker.com/r/ibmcom/odm/).
   Decision Center Business console will be available at http://localhost:9060/decisioncenter and Decision Server console will be deployed at http://localhost:9060/res.
@@ -42,7 +27,12 @@ As you go through the tutorial, you log in as two different users to get a feel 
   * To install **ODM in IBM Cloud Pak for Business Automation in starter mode**, follow this [documentation](https://www.ibm.com/docs/en/cloud-paks/cp-biz-automation/22.0.2?topic=deployments-installing-cp4ba-multi-pattern-starter-deployment).
   Refer to [Retrieve URLs for ODM in CP4BA starter mode and configure users](../topics/tut_icp_gs_odm_cp4ba_prereqs.md).
 
-3. Get the users and passwords to use.
+2. Get the users and passwords to use.
+
+  As you go through the tutorial, you log in as two different users to get a feel for the collaboration that takes place in the Business console. The two users log in with different roles:
+    -   An **admin user** with *ODM Administrator* role: A manager who initiates, reviews, and deploys changes.
+    -   A **business user** with *ODM Business User* role: A rule author who implements the change.
+
 
   - In **ODM for Developers**, the following users/password are defined:
     * as admin user:`odmAdmin`/`odmAdmin`
@@ -56,6 +46,13 @@ As you go through the tutorial, you log in as two different users to get a feel 
 
   * In **ODM in IBM Cloud Pak for Business Automation in starter mode**, you can use the `cp4admin` as the admin user and add *ODM Business User* role to the `user1` user.
   Refer to Refer to [Retrieve URLs for ODM in CP4BA starter mode and configure users](../topics/tut_icp_gs_odm_cp4ba_prereqs.md).
+
+3. Download the following files before you start the tutorial:
+
+  - [MiniLoan Service.zip](../../Miniloan%20Service.zip?raw=1)
+  - [miniloan-test.xlsx](../../miniloan-test.xlsx?raw=1)
+  - [execution-payload.json](../../execution-payload.json?raw=1)
+    As it is a text file, you need to right-click on the link and click on `Save link as`.
 
 ## Best practices
 
