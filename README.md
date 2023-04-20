@@ -5,7 +5,7 @@
 
 This tutorial is for technical and business users who want an introduction to business rules authoring and management with IBM Operational Decision Manager (ODM) running in a container environment. Here are the different offerings where you can use this Getting Started tutorial:
    * [IBM Operational Decision Manager for Developers](https://hub.docker.com/r/ibmcom/odm/) - To deploy ODM in Docker environments, for evaluation and development purposes.
-   * [IBM Operational Decision Manager for Developers on Certified Kubernetes](https://artifacthub.io/packages/helm/ibm-odm-charts/ibm-odm-dev/22.2.0) - To deploy ODM on Certified Kubernetes environments, for evaluation and development purposes. 
+   * [IBM Operational Decision Manager for Developers on Certified Kubernetes](https://artifacthub.io/packages/helm/ibm-odm-charts/ibm-odm-dev/22.2.0) - To deploy ODM on Certified Kubernetes environments, for evaluation and development purposes.
    * [IBM Operational Decision Manager for production on Certified Kubernetes](https://www.ibm.com/docs/en/odm/8.11.1?topic=kubernetes-installing-odm-production) - To deploy ODM on Certified Kubernetes environments, for production use.
    * [IBM Operational Decision Manager in IBM Cloud Pak for Business Automation](https://www.ibm.com/docs/en/cloud-paks/cp-biz-automation/22.0.2?topic=capabilities-operational-decision-manager) - To deploy ODM on RedHat OpenShift in the context of IBM Cloud Pak for Business Automation.
 
@@ -43,6 +43,6 @@ For issues specifically related  to this tutorial, please use the [GitHub issue 
 
 ## Licensing information
 
-Copyright IBM Corp. 1987, 2022. Licensed to the Apache Software Foundation \(ASF\) under one or more contributor license agreements. See the NOTICE file distributed with this work for additional information regarding copyright ownership. The ASF licenses this file to you under the Apache License, Version 2.0 \(the "License"\); you may not use this file except in compliance with the License. You may obtain a copy of the License at [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0). Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+Copyright IBM Corp. 1987, 2023. Licensed to the Apache Software Foundation \(ASF\) under one or more contributor license agreements. See the NOTICE file distributed with this work for additional information regarding copyright ownership. The ASF licenses this file to you under the Apache License, Version 2.0 \(the "License"\); you may not use this file except in compliance with the License. You may obtain a copy of the License at [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0). Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 
 [**Next** ![Next icon](doc/images/next.jpg)](doc/topics/tut_icp_gs_int.md)
