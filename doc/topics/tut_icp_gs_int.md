@@ -40,7 +40,7 @@ The tutorial uses a simple decision service that has only one project. The rules
 
     * In **ODM for Developers**, the following users/passwords are defined:
       * As admin user:`odmAdmin`/`odmAdmin`
-      * As business user: `rtsUser1`/`rtsUser1`.
+      * As business user: `rtsUser1`/`rtsUser1`
 
     * In **ODM for Developers on Certified Kubernetes**, by default, you can use `odmAdmin` as the admin user and `rtsUser1` as the business user.
     Both users implement the defined **usersPassword** parameter, if used, or a custom configuration, if you choose to manually [Configure user access](https://artifacthub.io/packages/helm/ibm-odm-charts/ibm-odm-dev/22.2.0#configuring-user-access).
@@ -48,7 +48,7 @@ The tutorial uses a simple decision service that has only one project. The rules
     * In **ODM for production on Certified Kubernetes**, by default, you can use `odmAdmin` as the admin user and `rtsUser1` as the business user.
     Both users implement the defined **usersPassword** parameter, if used, or the custom configuration, if you choose to manually [Configure user access](https://www.ibm.com/docs/en/odm/8.11.1?topic=production-configuring-user-access).
 
-    * In **ODM with IBM Cloud Pak for Business Automation in starter mode**, you can use `cp4admin` as the admin user and add the *ODM Business User* role to the `user1` user.
+    * In **ODM with IBM Cloud Pak for Business Automation in starter mode**, you can use `cp4admin` as the admin user and add the *ODM Business User* role to `user1`.
     Refer to [Retrieve URLs for ODM in CP4BA starter mode and configure users](../topics/tut_icp_gs_odm_cp4ba_prereqs.md).
 
 3. Download the following files before you start the tutorial.
@@ -56,7 +56,7 @@ The tutorial uses a simple decision service that has only one project. The rules
     - [MiniLoan Service.zip](../../Miniloan%20Service.zip?raw=1)
     - [miniloan-test.xlsx](../../miniloan-test.xlsx?raw=1)
     - [execution-payload.json](../../execution-payload.json?raw=1)
-      As this file is a text file, you need to right-click the link and click `Save link as`.
+      As this file is a text file, you need to right-click the link, and then click `Save link as`.
 
 ## Best practices
 
