@@ -66,7 +66,7 @@ This tutorial includes the following best practices:
 -   Create a snapshot of a branch before modifying it. You can use the snapshot for comparisons or to rollback the branch to a previous state.
 -   Post comments for other users. The comments can direct work and help track the changes.
 -   Use the search feature to find rule artifacts.
--   Test a rule set for REST execution in the Decision Server console.
+-   Test a ruleset for REST execution in the Decision Server console.
 -   Delete projects from the databases when you no longer use them.
 
 [**Next** ![Next icon](../images/next.jpg)](../topics/tut_icp_gs_evaluate_changes_lsn.md)
