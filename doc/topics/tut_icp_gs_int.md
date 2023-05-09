@@ -13,7 +13,7 @@ The tutorial uses a simple decision service that has only one project. The rules
 
 ## Prerequisites
 
-1. Install ODM
+1. Install ODM.
 
     Install ODM and note the URLs of the Decision Center Business console and the Decision Server console instances.
 
@@ -51,7 +51,7 @@ The tutorial uses a simple decision service that has only one project. The rules
     * In **ODM with IBM Cloud Pak for Business Automation in starter mode**, you can use `cp4admin` as the admin user and add the *ODM Business User* role to the `user1` user.
     Refer to [Retrieve URLs for ODM in CP4BA starter mode and configure users](../topics/tut_icp_gs_odm_cp4ba_prereqs.md).
 
-3. Download the following files before you start the tutorial:
+3. Download the following files before you start the tutorial.
 
     - [MiniLoan Service.zip](../../Miniloan%20Service.zip?raw=1)
     - [miniloan-test.xlsx](../../miniloan-test.xlsx?raw=1)
