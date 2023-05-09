@@ -1,14 +1,14 @@
-## Retrieve URLs for ODM in CP4BA starter mode and configure users
+## Retrieve the URLs for ODM in CP4BA starter mode and configure the users
 
-### Get ODM urls and admin user's password
+### Get the ODM URLs and the admin user's password
 
-You can find URLs to access ODM from the OCP console:
+You can find the URLs to access ODM from the OCP console:
 
-1. Go to **Workloads** > **ConfigMaps**, and
+1. Go to **Workloads** > **ConfigMaps**
 
 2. Select the `<CR_NAME>-cp4ba-access-info` configmap.
 
-3. In the **Data** section you will find the `odm-access-info` information:
+3. In the **Data** section, go to the `odm-access-info` information:
 
     ```console
     CloudPak dashboard: https://cpd-odm.apps.<ocp-cluster>.com
@@ -20,43 +20,43 @@ You can find URLs to access ODM from the OCP console:
     Default administrator password: ****
     ```
 
-4. Take notes of the ODM URLs.
+4. Take note of the ODM URLs.
 
-5. Take notes of the default administrator password.
+5. Take note of the default administrator password.
 
-    You will use the `cp4admin` user and its corresponding password to login as the **admin user** in the rest of the tutorial.
+    You will use the `cp4admin` user and its corresponding password to log in as the **admin user** in the rest of the tutorial.
 
     > **Note**
-    > To login to ODM URLs using `cp4admin` user you must select Log in with **IBM provided credentials (admin only)**.
+    > To log in to the ODM URLs with the `cp4admin` user you must select Log in with **IBM provided credentials (admin only)**.
 
 ### Configure the business user
 
 1. Open the **CloudPak dashboard** URL.
 
     > **Note**
-    > The CloudPak dashboard URL can be found in the `<CR_NAME>-cp4ba-access-info` configmap as describe above.
+    > The CloudPak dashboard URL can be found in the `<CR_NAME>-cp4ba-access-info` configmap as described above.
 
-2. Login using the *IBM provided admin user*
+2. Log in with the *IBM provided admin user*.
 
     You must log in with **IBM provided credentials (admin only)** instead of *Entreprise LDAP*.
 
     > **Note**
-    > You can find the IBM provided admin user and password in the **platform-auth-idp-credentials** secret. Click on the *Reveal values* button.
+    > You can find the IBM provided admin user and password in the **platform-auth-idp-credentials** secret. Click the *Reveal values* button.
 
-3. Assign the role to `user1`
+3. Assign the role to `user1`.
 
-    - Click **Manage users** in the administrator's UI.
-    - In the Users tab on the *Access control* page, select **user1**.
-    - Click **Assign roles** on the user's page.
-    - Select the **ODM Business User** role on the *Assign roles* page, and then click **Assign 1 role**.
+    - In the administrator's UI, click **Manage users**.
+    - In the Users tab of the *Access control* page, select **user1**.
+    - On the user's page, click **Assign roles** .
+    - On the *Assign roles* page, select the **ODM Business User** role, and then click **Assign 1 role**.
 
-    Now the user `user1` is well configured to be used as the **business user** in the rest of the tutorial.
+    Now the user `user1` is well configured as the **business user** for the rest of the tutorial.
 
-4. Retrieve `user1` password
+4. Retrieve the `user1` password.
 
-    - Go to **Workloads** > **Secrets**
+    - Go to **Workloads** > **Secrets**.
     - Select the `<CR_NAME>-openldap-customldif` secret.
-    - Click on the *Reveal values* button.
+    - Click the *Reveal values* button.
       ```
       ...
       dn: uid=user1,dc=example,dc=org
@@ -66,7 +66,7 @@ You can find URLs to access ODM from the OCP console:
       userpassword: ****
       ...
       ```
-    - Take notes of the `user1` password
+    - Take note of the `user1` password.
 
     > **Note**
-    > To login to ODM URLs using `user1` user you must select Log in with **Entreprise LDAP**.
+    > To log in to the ODM URLs as `user1`, you must select Log in with **Entreprise LDAP**.
