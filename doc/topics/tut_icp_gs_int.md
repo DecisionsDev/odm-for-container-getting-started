@@ -18,7 +18,7 @@ The tutorial uses a simple decision service that has only one project. The rules
     Install ODM and note the URLs of the Decision Center Business console and the Decision Server console instances.
 
     - To install **ODM for Developers**, follow this [documentation](https://hub.docker.com/r/ibmcom/odm/).
-    The Decision Center Business console will be available at the URL http://localhost:9060/decisioncenter . The Decision Server console will be deployed at the URL http://localhost:9060/res.
+    The Decision Center Business console will be available at the URL http://localhost:9060/decisioncenter. The Decision Server console will be deployed at the URL http://localhost:9060/res.
 
     - To install **ODM for Developers on Certified Kubernetes**, follow this [documentation](https://artifacthub.io/packages/helm/ibm-odm-charts/ibm-odm-dev/22.2.0#installing-the-chart).
     Refer to [Accessing ODM](https://artifacthub.io/packages/helm/ibm-odm-charts/ibm-odm-dev/22.2.0#accessing-odm) to retrieve the URLs.
@@ -43,10 +43,10 @@ The tutorial uses a simple decision service that has only one project. The rules
       * As business user: `rtsUser1`/`rtsUser1`.
 
     * In **ODM for Developers on Certified Kubernetes**, by default, you can use `odmAdmin` as the admin user and `rtsUser1` as the business user.
-    Both users implement the defined **usersPassword** parameter, if used, or a custom configuration, if you choose to [Configure manually user access](https://artifacthub.io/packages/helm/ibm-odm-charts/ibm-odm-dev/22.2.0#configuring-user-access).
+    Both users implement the defined **usersPassword** parameter, if used, or a custom configuration, if you choose to manually [Configure user access](https://artifacthub.io/packages/helm/ibm-odm-charts/ibm-odm-dev/22.2.0#configuring-user-access).
 
     * In **ODM for production on Certified Kubernetes**, by default, you can use `odmAdmin` as the admin user and `rtsUser1` as the business user.
-    Both users implement the defined **usersPassword** parameter, if used, or the custom configuration, if you choose to [Configure manually user access](https://www.ibm.com/docs/en/odm/8.11.1?topic=production-configuring-user-access).
+    Both users implement the defined **usersPassword** parameter, if used, or the custom configuration, if you choose to manually [Configure user access](https://www.ibm.com/docs/en/odm/8.11.1?topic=production-configuring-user-access).
 
     * In **ODM with IBM Cloud Pak for Business Automation in starter mode**, you can use `cp4admin` as the admin user and add the *ODM Business User* role to the `user1` user.
     Refer to [Retrieve URLs for ODM in CP4BA starter mode and configure users](../topics/tut_icp_gs_odm_cp4ba_prereqs.md).
