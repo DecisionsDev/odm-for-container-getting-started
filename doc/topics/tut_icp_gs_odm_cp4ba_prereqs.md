@@ -4,11 +4,11 @@
 
 You can find the URLs to access ODM from the OCP console:
 
-1. Go to **Workloads** > **ConfigMaps**
+1. Go to **Workloads** > **ConfigMaps**.
 
 2. Select the `<CR_NAME>-cp4ba-access-info` configmap.
 
-3. In the **Data** section, go to the `odm-access-info` information:
+3. In the **Data** section, go to the `odm-access-info` information.
 
     ```console
     CloudPak dashboard: https://cpd-odm.apps.<ocp-cluster>.com
@@ -24,10 +24,10 @@ You can find the URLs to access ODM from the OCP console:
 
 5. Take note of the default administrator password.
 
-    You will use the `cp4admin` user and its corresponding password to log in as the **admin user** in the rest of the tutorial.
+    In the rest of the tutorial, you will use the `cp4admin` user and its corresponding password to log in as the **admin user**.
 
     > **Note**
-    > To log in to the ODM URLs with the `cp4admin` user you must select Log in with **IBM provided credentials (admin only)**.
+    > To log in to the ODM URLs with the `cp4admin` user, you must select Log in with **IBM provided credentials (admin only)**.
 
 ### Configure the business user
 
