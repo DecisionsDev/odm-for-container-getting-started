@@ -46,7 +46,7 @@ The tutorial uses a simple decision service that has only one project. The rules
     Both users implement the defined **usersPassword** parameter, if used, or a custom configuration, if you choose to manually [Configure user access](https://artifacthub.io/packages/helm/ibm-odm-charts/ibm-odm-dev/22.2.0#configuring-user-access).
 
     * In **ODM for production on Certified Kubernetes**, by default, you can use `odmAdmin` as the admin user and `rtsUser1` as the business user.
-    Both users implement the defined **usersPassword** parameter, if used, or the custom configuration, if you choose to manually [Configure user access](https://www.ibm.com/docs/en/odm/8.11.1?topic=production-configuring-user-access).
+    Both users implement the defined **usersPassword** parameter, if used, or the custom configuration, if you choose to manually [Configure user access](https://ibmdocs-test.dcs.ibm.com/docs/en/odm/8.12.0?topic=production-configuring-user-access).
 
     * In **ODM with IBM Cloud Pak for Business Automation in starter mode**, you can use `cp4admin` as the admin user and add the *ODM Business User* role to `user1`.
     Refer to [Retrieve URLs for ODM in CP4BA starter mode and configure users](../topics/tut_icp_gs_odm_cp4ba_prereqs.md).
