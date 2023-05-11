@@ -23,7 +23,7 @@ The tutorial uses a simple decision service that has only one project. The rules
     - To install **ODM for Developers on Certified Kubernetes**, follow this [documentation](https://artifacthub.io/packages/helm/ibm-odm-charts/ibm-odm-dev/22.2.0#installing-the-chart).
     Refer to [Accessing ODM](https://artifacthub.io/packages/helm/ibm-odm-charts/ibm-odm-dev/22.2.0#accessing-odm) to retrieve the URLs.
 
-    * To install **ODM for production on Certified Kubernetes**, follow this [documentation](https://www.ibm.com/docs/en/odm/8.11.1?topic=production-installing-helm-release-odm).
+    * To install **ODM for production on Certified Kubernetes**, follow this [documentation]([https://ibmdocs-test.dcs.ibm.com/docs/en/odm/8.12.0?topic=production-installing-helm-release-odm]).
     Refer to [Configuring external access](https://www.ibm.com/docs/en/odm/8.11.1?topic=production-configuring-external-access) to retrieve the URLs.
 
     * To install **ODM with IBM Cloud Pak for Business Automation in starter mode**, follow this [documentation](https://www.ibm.com/docs/en/cloud-paks/cp-biz-automation/22.0.2?topic=deployments-installing-cp4ba-multi-pattern-starter-deployment).
