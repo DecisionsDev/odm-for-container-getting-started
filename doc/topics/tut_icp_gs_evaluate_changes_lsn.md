@@ -21,9 +21,6 @@ You import the Miniloan Service decision service into Decision Center, and then 
 
 1.   Open the Decision Center Business console.
 2.   Log in as **admin user**.
-
- **Note:** If you see that Miniloan Service is already available in the **Library** tab, you must remove it before you can import it again. Ask your administrator if you can remove the existing Miniloan Service decision service, and refer to the following page to learn how to remove a decision service from Decision Center: [Step 1: Deleting the decision service from Decision Center](../topics/tut_icp_gs_clean_db_lsn.md#step-1-deleting-the-decision-service-from-decision-center).
-
 3.  Click the **Import Decision Service** button ![Image shows the Import Decision Service button](../images/icon_import_dservice.jpg).
 4.  Click **Choose** to browse and then select the `Miniloan Service.zip` file you previously downloaded ([MiniLoan Service.zip](../../Miniloan%20Service.zip?raw=1)).
 5.  Make sure **Use Decision Governance Framework** is not selected. To simplify the tutorial, you work in an ungoverned branch of the decision service.
