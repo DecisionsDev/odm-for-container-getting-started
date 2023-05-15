@@ -37,7 +37,7 @@ You remove the decision artifacts from the Decision Server console.
 8.  Click **Confirm** in the warning message. Now the execution object model is not referenced from any ruleset or library.
 9.  Select miniloan-xom.zip, and click **Remove** to remove the execution object model cleanly.
 10. In the **Explorer** tab, click **Libraries** under **Navigator**.
-11. Select mydeployment\_1.0, and click **Remove** to remove the library.
+11. Select mydeployment\_library, and click **Remove** to remove the library.
 
     **Note:** You can also remove the Miniloan\_Service\_brm.Branch\_xx\_xx library. This library was created when you ran the test suite.
 

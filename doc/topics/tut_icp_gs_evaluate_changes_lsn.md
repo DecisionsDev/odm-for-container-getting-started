@@ -122,7 +122,7 @@ You explore and run the miniloan-test test suite. It is included in the 'Miniloa
 2.  Close the Excel file.
 3.  Back in the Business console, open the **Tests** tab.
 4.  Click the **New Test Suite** button ![Image shows the New Test Suite button](../images/icon_merge_create_plus.jpg).
-5.  In **File to use**, browse to miniloan-test.xlsx on your computer.
+5.  In **Scenario File**, browse to `miniloan-test.xlsx` on your computer.
 6.  Click **Save and run**.
 7.  Type the comment Running test suite and click **Create new version**.
 8.  Click **OK** to run the test suite.

@@ -19,8 +19,8 @@ You do a search to find the rules in the decision service that handle the credit
 
 1.  Log in to the Business console as **business user**.
 2.  Open the **Library** tab.
-3.  Hover over the Miniloan Service box, and click anywhere except the name to expand it. Then click **main** under **Recently updated branches** to open the **main** branch.
-4.   In the **Search for rules** field, type score and press Enter. The results show all the action rules and decision tables in which the word score occurs. You look at all the rules, and conclude that you must edit the **repayment and score** decision table.
+3.  Hover over the *Miniloan Service* box, and click anywhere except the name to expand it. Then click **main** under **Recently updated branches** to open the **main** branch.
+4.   In the **Search for rules** field, type "score" and press Enter. The results show all the action rules and decision tables in which the word score occurs. You look at all the rules, and conclude that you must edit the **repayment and score** decision table.
 
 ## Step 2: Modifying a decision table
 
@@ -29,13 +29,17 @@ You start by checking the history of changes to the decision table, and then you
 **Procedure**
 
 1.   Click **repayment and score** to display the decision table.
-2.   Click **Timeline**. The history of changes for the decision table shows no recent changes.
+2.   Click the **Timeline** button ![Image shows the Timeline button](../images/icon_timeline.jpg) in the upper right corner of the window. The history of changes for the decision table shows no recent changes.
 3.   Click **Exit Timeline**.
-4.   Click **Edit**.
+4.   Click the **Edit** button ![Image shows the Edit button](../images/icon_edit.jpg).
+
+> **Note**
+> Before editing the decision table, a dialog box pops up to change the row order. Leave the default value to *Automatic* and click **OK**.
+
 5.   Double-click the number `200` in row 1 of the **credit score** column and enter the value 300. Do not change this value in row 2 yet.
-6.   Click **Details** and change the status to **Defined**. You can use the rule properties for different purposes in Decision Center, such as the organization and workflow, permissions, testing, and deployment.
+6.   Click the **Details** button ![Image shows the Details button](../images/icon_details.jpg) and change the status to **Defined**. You can use the rule properties for different purposes in Decision Center, such as the organization and workflow, permissions, testing, and deployment.
 7.   Close the property window.
-8.   Click **Save**.
+8.   Click the **Save** button ![Image shows the Save button](../images/icon_save.jpg).
 9.   Type the comment "Changed credit score to 300" and click **Create New Version**. The decision table now displays v1.1. Decision Center creates a new version with the changes. The major version number 1 is assigned to the main branch. Any new branch, including the branches of the governance framework, take the next available number. The minor version number corresponds to the number of changes made in the branch.
 
 ## Step 3: Correcting an error

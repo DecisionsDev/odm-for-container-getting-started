@@ -16,8 +16,8 @@ You review the changes to Miniloan Service.
 2.   Hover over **repayment and score**, and click **main** in the rule description to go directly to the main branch of **Miniloan Service**.
 3.   Click the **Snapshots** tab.
 4.   Click **Initial State**. You see the state of the branch when you made the snapshot.
-5.   Click **Compare**. The Business console proposes to compare the Initial State snapshot with the current state of the project.
-6.   Click **Compare**. By default, the console shows the updated table.
+5.   Click the **Compare** button ![Image shows the Compare button](../images/icon_compare.jpg) in the upper right corner of the window. The Business console proposes to compare the Initial State snapshot with the current state of the project.
+6.   Click **Compare** in the *Compare Snapshots* dialog. By default, the console shows the updated table.
 7.   Click **Added** to see the new rule.
 8.   Click **Updated** to see the updated rule.
 9.   Hover over the row for **repayment and score**, and click the **Compare** button in the row to see the differences between the two versions of the decision table.
@@ -51,9 +51,9 @@ Now that you are satisfied with the results, you deploy a RuleApp from the decis
     -   **Deployment Snapshot**: Defines whether a snapshot is taken at the moment of deployment.
 3.  Click the **Edit** button in the upper right corner of the window.
 4.  Click the **Targets** tab.
-5.  Select **Decision Service Execution** and click the **Save** button.
-6.  Type Miniloan with Summer policy, and click **Create new version**.
-7.   Click the **Deploy** button ![""](../images/icon_deploy.jpg) in the upper right corner of the window. A dialog box opens with a summary of the deployment configuration. It gives you the option of deploying to a server or creating a RuleApp archive.
+5.  Check that **Decision Service Execution** is selected and click the **Save** button.
+6.  Type "Miniloan with Summer policy", and click **Create new version**.
+7.  Click the **Deploy** button ![Image shows the Deploy button](../images/icon_deploy.jpg) in the upper right corner of the window. A dialog box opens with a summary of the deployment configuration. It gives you the option of deploying to a server or creating a RuleApp archive.
 8.   Leave **Server** selected in the dialog, and click **Deploy**. A message opens with the status of the deployment:
 
  ![Image shows the status of the deployment.](../images/scrn_deploystatus.jpg)
