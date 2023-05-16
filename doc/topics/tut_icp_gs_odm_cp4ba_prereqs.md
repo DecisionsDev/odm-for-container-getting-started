@@ -11,11 +11,11 @@ You can find the URLs to access ODM from the OCP console:
 3. In the **Data** section, go to the `odm-access-info` information.
 
     ```console
-    CloudPak dashboard: https://cpd-<RELEASE>.apps.<ocp-cluster>.com
-    ODM Decision Center URL: https://cpd-<RELEASE>.apps.<ocp-cluster>.com/odm/decisioncenter
-    ODM Decision Runner URL: https://cpd-<RELEASE>.apps.<ocp-cluster>.com/odm/DecisionRunner
-    ODM Decision Server Console URL: https://cpd-<RELEASE>.apps.<ocp-cluster>.com/odm/res
-    ODM Decision Server Runtime URL: https://cpd-<RELEASE>.apps.<ocp-cluster>.com/odm/DecisionService
+    CloudPak dashboard: https://cpd-<CR_NAME>.apps.<ocp-cluster>.com
+    ODM Decision Center URL: https://cpd-<CR_NAME>.apps.<ocp-cluster>.com/odm/decisioncenter
+    ODM Decision Runner URL: https://cpd-<CR_NAME>.apps.<ocp-cluster>.com/odm/DecisionRunner
+    ODM Decision Server Console URL: https://cpd-<CR_NAME>.apps.<ocp-cluster>.com/odm/res
+    ODM Decision Server Runtime URL: https://cpd-<CR_NAME>.apps.<ocp-cluster>.com/odm/DecisionService
     Default administrator username: cp4admin
     Default administrator password: ****
     ```
