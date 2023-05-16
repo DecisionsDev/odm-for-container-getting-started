@@ -12,7 +12,7 @@ You view the RuleApp in the Decision Server console and check the status of the 
 
 **Procedure**
 
-1.   Sign in to your instance of the Decision Server console by using odmAdmin as the user name and password. 
+1.   Sign in to your instance of the Decision Server console as **admin user**.
 2.  Click the **Explorer** tab.
 3.   In the Navigator, expand **RuleApps**, and then /mydeployment/1.0. You see that the Decision Server console contains version 1.0 of mydeployment, which contains version 1.0 of Miniloan\_ServiceRuleset:
 
@@ -29,19 +29,23 @@ You test the ruleset with a REST request in the Decision Server console.
 
 **Procedure**
 
-1.   In the Decision Server console, on the Miniloan\_ServiceRuleset page, click **Retrieve HTDS Description File**. 
-2.   Select the **REST** option, and then choose **OpenAPI-JSON** for the format. 
+1.   In the Decision Server console, on the Miniloan\_ServiceRuleset page, click **Retrieve HTDS Description File**.
+2.   Select the **REST** option, and then choose **OpenAPI-JSON** for the format.
 3.  Click **View** and copy the URL. The decision service URL uses the following format:
 
-http://(host port)/DecisionService/rest/v1/mydeployment/1.0/Miniloan_ServiceRuleset/1.0/
+  ```
+  http(s)://<DSC_ENDPOINT>/DecisionService/rest/v1/mydeployment/1.0/Miniloan_ServiceRuleset/1.0/
+  ```
 
- You need the URL to execute the request in [Step 3 \(optional\): Testing the execution of the ruleset using curl](../topics/tut_icp_gs_test_ruleset_lsn.md#step-3-optional-testing-the-execution-of-the-ruleset-using-curl).
+  > **Note**
+  > You can export this URL as `DSC_URL` environment variable to execute the request in [Step 3 \(optional\): Testing the execution of the ruleset using curl](../topics/tut_icp_gs_test_ruleset_lsn.md#step-3-optional-testing-the-execution-of-the-ruleset-using-curl).
 
 4.  Close the web page.
 5.  Back on the Miniloan\_ServiceRuleset page, click **Retrieve HTDS Description File**.
-6.   Make sure **REST** and **OpenAPI-JSON** are still selected, and click **Test**. 
-7.   On the REST Service page, replace the entire request description with the following text: 
+6.   Make sure **REST** and **OpenAPI-JSON** are still selected, and click **Test**.
+7.   On the REST Service page, replace the entire request description with the following text:
 
+    ```json
     {
        "loan": {
            "amount":500000,
@@ -55,6 +59,7 @@ http://(host port)/DecisionService/rest/v1/mydeployment/1.0/Miniloan_ServiceRule
           "yearlyIncome":80000
        }
     }
+    ```
 
 
 8.  Click **Execute request**. The Server Response returns the following data:
@@ -73,11 +78,15 @@ You test the execution of the Miniloan\_ServiceRuleset ruleset in a command term
 
 1.  Open a command terminal.
 2.  Go to the location where you previously downloaded ([execution-payload.json](../../execution-payload.json?raw=1)).
-3.  Type the following command: 
-    
-    curl -X POST -H "Content-Type: application/json" decisionserviceURL -u resExecutor:resExecutor -d "@execution-payload.json"  
+3.  Type the following command:
 
- Where decisionserviceURL is the URL you copied in [Step 2: Testing the ruleset for REST execution](../topics/tut_icp_gs_test_ruleset_lsn.md#step-2-testing-the-ruleset-for-rest-execution).
+    ```
+    curl -k -X POST -H "Content-Type: application/json" \
+         -u <admin_user>:<admin_password> -d "@execution-payload.json" \
+         ${DSC_URL}
+    ```
+
+    Where `DSC_URL` is the URL from [Step 2: Testing the ruleset for REST execution](../topics/tut_icp_gs_test_ruleset_lsn.md#step-2-testing-the-ruleset-for-rest-execution).
 
  The command issues a POST request for the URL of your decision service. The execution parameters are stored in the execution-payload.json file.
 
@@ -87,9 +96,8 @@ You test the execution of the Miniloan\_ServiceRuleset ruleset in a command term
 
  It shows that the loan is rejected because the debt-to-income ratio is too high.
 
-You have finished the tutorial, and no longer need the decision service in Decision Center and the Decision Server console. In the next task, you remove the Miniloan decision service from Decision Center and the Decision Server console. 
+You have finished the tutorial, and no longer need the decision service in Decision Center and the Decision Server console. In the next task, you remove the Miniloan decision service from Decision Center and the Decision Server console.
 
 [**Next** ![](../images/next.jpg)](../topics/tut_icp_gs_clean_db_lsn.md)
 
 [![](../images/home.jpg) **Back to table of contents**](../../README.md)
-
