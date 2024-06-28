@@ -39,7 +39,7 @@ This tutorial uses the Miniloan Service decision service. To further explore the
 
 ## Issues and contributions
 
-For issues specifically related  to this tutorial, please use the [GitHub issue tracker](https://github.com/DecisionsDev/odm-for-container-getting-started/issues). For more general issues related to IBM Operational Decision Manager, you can [get help]([https://developer.ibm.com/odm/home/connect/](https://community.ibm.com/community/user/automation/communities/community-home?CommunityKey=c0005a22-520b-4181-bfad-feffd8bdc022)) from the ODM community or, if you own production licenses for Operational Decision Manager, through the usual support channels.
+For issues specifically related  to this tutorial, please use the [GitHub issue tracker](https://github.com/DecisionsDev/odm-for-container-getting-started/issues). For more general issues related to IBM Operational Decision Manager, you can [get help](https://community.ibm.com/community/user/automation/communities/community-home?communitykey=c0005a22-520b-4181-bfad-feffd8bdc022) from the ODM community or, if you own production licenses for Operational Decision Manager, through the usual support channels.
 
 ## Licensing information
 
