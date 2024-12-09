@@ -21,25 +21,14 @@
 **/
 
 package miniloan;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-
-
-// import to be able to use the annotations for the BOM
-import ilog.rules.bom.annotations.*;
 
 /**
  * This class models a borrower.
  * A borrower is created with a name, a credit score, and a yearly income.
  */
-@XmlAccessorType(XmlAccessType.FIELD)
 public class Borrower {
-	@XmlElement
 	private String name;
-	@XmlElement
     private int creditScore;
-	@XmlElement
     private int yearlyIncome;
 
 	public Borrower() {
@@ -52,8 +41,7 @@ public class Borrower {
 	 * @param creditScore The credit score of the borrower.
 	 * @param yearlyIncome The yearly income of the borrower.
 	 */
-	public Borrower(@BusinessName("name") String name,@BusinessName("creditScore") int creditScore,
-			@BusinessName("yearlyIncome") int yearlyIncome) {
+	public Borrower(String name, int creditScore, int yearlyIncome) {
 	    this();
 		this.name = name;
 		this.creditScore = creditScore;
