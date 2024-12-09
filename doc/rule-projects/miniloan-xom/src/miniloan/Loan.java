@@ -21,15 +21,9 @@
 **/
 
 package miniloan;
-//import to be able to use the annotations for the BOM
-import ilog.rules.bom.annotations.*;
 
 import java.util.ArrayList;
 import java.util.Collection;
-
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
 
 
 /**
@@ -41,16 +35,13 @@ import javax.xml.bind.annotation.XmlElement;
  * may be set to false, and messages may be attached to the loan request
  * to explain the rejection.
  */
-@XmlAccessorType(XmlAccessType.FIELD)
 public class Loan {
-	@XmlElement
     private int amount;
-	@XmlElement
     private int duration;
-   private double yearlyInterestRate;
+    private double yearlyInterestRate;
     private int yearlyRepayment;
     private boolean approved;
-     private Collection<String> messages;
+    private Collection<String> messages;
 
 	/**
 	 * Builds an empty loan request.
@@ -67,11 +58,7 @@ public class Loan {
 	 * @param duration The requested duration (in months) of the loan.
 	 * @param yearlyInterestRate The yearly base interest rate.
 	 */
-	// property to tell in the BOM that this is the constructor for DVS
-	@CustomProperty(name = "dataio.default",
-			value = "true")
-	public Loan(@BusinessName("amount") int amount,@BusinessName("duration") int duration,
-			@BusinessName("yearlyInterestRate") double yearlyInterestRate) {
+	public Loan(int amount, int duration, double yearlyInterestRate) {
 	    this();
 		this.amount = amount;
 		this.duration = duration;
@@ -94,9 +81,6 @@ public class Loan {
 	/**
 	 * @return The approval status of the loan.
 	 */
-	// property to tell in the BOM that this property should be ignored
-	@CustomProperty(name = "factory.ignore",
-			value = "true")
 	public boolean isApproved() {
 		return approved;
 	}
