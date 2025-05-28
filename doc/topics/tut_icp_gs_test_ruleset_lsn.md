@@ -45,21 +45,21 @@ You test the ruleset with a REST request in the Decision Server console.
 6.   Make sure **REST** and **OpenAPI-JSON** are still selected, and click **Test**.
 7.   On the REST Service page, replace the entire request description with the following text:
 
-    ```json
-    {
-       "loan": {
-           "amount":500000,
-           "duration":240,
-           "yearlyInterestRate": 0.05
-       },
-       "__DecisionID__": "Test",
-       "borrower": {
-          "name":"Joe",
-          "creditScore":600,
-          "yearlyIncome":80000
-       }
-    }
-    ```
+   ```json
+   {
+      "loan": {
+          "amount":500000,
+          "duration":240,
+          "yearlyInterestRate": 0.05
+      },
+      "__DecisionID__": "Test",
+      "borrower": {
+         "name":"Joe",
+         "creditScore":600,
+         "yearlyIncome":80000
+      }
+   }
+   ```
 
 
 8.  Click **Execute request**. The Server Response returns the following data:
