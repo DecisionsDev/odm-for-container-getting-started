@@ -14,9 +14,9 @@ You view the RuleApp in the Decision Server console and check the status of the 
 
 1.   Sign in to your instance of the Decision Server console as **admin user**.
 2.  Click the **Explorer** tab.
-3.   In the Navigator, expand **RuleApps**, and then /mydeployment/1.0. You see that the Decision Server console contains version 1.0 of mydeployment, which contains version 1.0 of Miniloan\_ServiceRuleset:
+3.  Expand **RuleApps** at the left-hand sidebar, and then expand */mydeployment/1.0*. You should see that the Decision Server console contains version 1.0 of mydeployment, which contains version 1.0 of Miniloan\_ServiceRuleset:
 
- ![Image shows the navigation menu](../images/scrn_deploy_resnav_icp.jpg)
+ <img src="../images/scrn_deploy_resnav_icp.jpg" width="40%" alt="Image shows the navigation menu">
 
 4.   Click /Miniloan\_ServiceRuleset/1.0 to view the details of the ruleset in the Ruleset View. The status of the ruleset is enabled, which indicates that the ruleset can be run:
 
@@ -29,7 +29,7 @@ You test the ruleset with a REST request in the Decision Server console.
 
 **Procedure**
 
-1.   In the Decision Server console, on the Miniloan\_ServiceRuleset page, click **Retrieve HTDS Description File**.
+1.   In the Decision Server console, on the Miniloan\_ServiceRuleset page, expand the section **Hosted Transparent Decision Services (HTDS) Options** and click **Retrieve HTDS Description File**.
 2.   Select the **REST** option, and then choose **OpenAPI-JSON** for the format.
 3.  Click **View** and copy the URL. The decision service URL uses the following format:
 
@@ -41,9 +41,9 @@ You test the ruleset with a REST request in the Decision Server console.
   > You can export this URL as `DSC_URL` environment variable to execute the request in [Step 3 \(optional\): Testing the execution of the ruleset using curl](../topics/tut_icp_gs_test_ruleset_lsn.md#step-3-optional-testing-the-execution-of-the-ruleset-using-curl).
 
 4.  Close the web page.
-5.  Back on the Miniloan\_ServiceRuleset page, click **Retrieve HTDS Description File**.
+5.  Back on the Miniloan\_ServiceRuleset page with the **Retrieve HTDS Description File** dialog.
 6.   Make sure **REST** and **OpenAPI-JSON** are still selected, and click **Test**.
-7.   On the REST Service page, replace the entire request description with the following text:
+7.   On the REST Service page, make sure the **Execution Request** option is *JSON* and replace the entire request description with the following text:
 
    ```json
    {
